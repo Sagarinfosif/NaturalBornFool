@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.pureway.cinemaflix.activity.videoEditor.fragments.BeautifyFragment">
+
+    <RelativeLayout
+        android:id="@+id/beauty_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transdark"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_above="@+id/recycler_beauty_items"
+            android:id="@+id/beauty_level_layout"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="#00000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <in.pureway.cinemaflix.activity.videoEditor.util.CustomSeekBar
+                android:id="@+id/beauty_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_toLeftOf="@id/btn_beauty_comparison"
+                android:max="100"
+                android:progress="0"
+                android:progressBackgroundTint="@color/white"
+                android:progressTint="@color/purple"
+                android:thumbTint="@color/purple" />
+
+            <Button
+                android:id="@+id/btn_beauty_init"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="3dp"
+                android:background="@drawable/init_btn_default" />
+
+            <Button
+                android:id="@+id/btn_beauty_comparison"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_toStartOf="@id/btn_beauty_init"
+                android:background="@drawable/comparison_btn_default" />
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_beauty_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_beauty" />
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_add_effect"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_35"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/ok"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_beauty_level_info"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@id/beauty_layout_container"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/beauty_level_info_bg"
+        android:gravity="center"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:textColor="@android:color/black"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+</RelativeLayout>

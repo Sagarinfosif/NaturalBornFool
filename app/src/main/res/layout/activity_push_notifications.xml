@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.privacysettings.PushNotificationsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_back_privacy_settings"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:onClick="backPress"
+            android:padding="@dimen/dp_3"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/push_notifications"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/grey"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/interactions"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Switch
+                    android:id="@+id/switchLikes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/likes"
+                    android:textColor="@color/black"
+                    android:textDirection="ltr"
+                    android:theme="@style/switchStyle"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Switch
+                    android:id="@+id/switchComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/comments"
+                    android:textColor="@color/black"
+                    android:textDirection="ltr"
+                    android:theme="@style/switchStyle"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+
+                <Switch
+                    android:id="@+id/switchNewFollowers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/new_followers"
+                    android:textColor="@color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <!-- <RelativeLayout-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_marginTop="@dimen/dp_10">-->
+
+            <!-- <TextView-->
+            <!-- android:layout_width="wrap_content"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_alignParentLeft="true" />-->
+
+            <!-- <Switch-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_alignParentRight="true"-->
+            <!-- android:fontFamily="@font/poppins_light"-->
+            <!-- android:gravity="center_vertical"-->
+            <!-- android:text="@string/mentions"-->
+            <!-- android:textColor="@color/black"-->
+            <!-- android:textDirection="ltr"-->
+            <!-- android:textSize="@dimen/sp_14" />-->
+
+            <!-- </RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/messages"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Switch
+                    android:id="@+id/switchDirectMsg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/direct_messages"
+                    android:textColor="@color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/video_updates"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10">
+
+                <Switch
+                    android:id="@+id/switchVideoFromOtherFollowAcnt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center_vertical"
+                    android:text="@string/videos_from_accounts_you_follow"
+                    android:textColor="@color/black"
+                    android:textDirection="ltr"
+                    android:textSize="@dimen/sp_14" />
+
+            </RelativeLayout>
+
+
+            <!-- <RelativeLayout-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_marginTop="@dimen/dp_10">-->
+
+            <!-- <Switch-->
+            <!-- android:id="@+id/switchVideoSggestions"-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_alignParentRight="true"-->
+            <!-- android:fontFamily="@font/poppins_light"-->
+            <!-- android:gravity="center_vertical"-->
+            <!-- android:text="@string/video_suggestions"-->
+            <!-- android:textColor="@color/black"-->
+            <!-- android:textDirection="ltr"-->
+            <!-- android:textSize="@dimen/sp_14" />-->
+
+            <!-- </RelativeLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:background="@color/lightgrey" />
+
+            <!-- <TextView-->
+            <!-- android:layout_width="wrap_content"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:fontFamily="@font/poppins_light"-->
+            <!-- android:text="@string/live"-->
+            <!-- android:textColor="@color/black"-->
+            <!-- android:textSize="@dimen/sp_14" />-->
+
+            <!-- <RelativeLayout-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_marginTop="@dimen/dp_10">-->
+
+            <!-- <Switch-->
+            <!-- android:layout_width="match_parent"-->
+            <!-- android:layout_height="wrap_content"-->
+            <!-- android:layout_alignParentRight="true"-->
+            <!-- android:fontFamily="@font/poppins_light"-->
+            <!-- android:gravity="center_vertical"-->
+            <!-- android:text="@string/livestreams_from_accounts_you_follow"-->
+            <!-- android:textColor="@color/black"-->
+            <!-- android:textDirection="ltr"-->
+            <!-- android:textSize="@dimen/sp_14" />-->
+
+            <!-- </RelativeLayout>-->
+
+
+            <Button
+                android:id="@+id/update"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Settings"
+                android:textAllCaps="false"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/dp_30"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

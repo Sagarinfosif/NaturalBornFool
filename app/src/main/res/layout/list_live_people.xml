@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relative_main"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginLeft="@dimen/dp_8"
+    android:layout_marginTop="@dimen/dp_8">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_live_user_preview"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/poat"
+        app:riv_corner_radius="@dimen/dp_20" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_margin="@dimen/dp_5"
+            android:src="@drawable/ic_user1"
+            app:civ_border_color="@color/purple"
+            app:civ_border_width="@dimen/dp_1" />
+
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/img_like"
+            android:layout_toRightOf="@+id/civ_user"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_light"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="Elisabeth"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/img_like"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_number_likes"
+            android:src="@drawable/heart_off"
+            android:tint="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_number_likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="@dimen/dp_5"
+            android:text="40.8k"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_13" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

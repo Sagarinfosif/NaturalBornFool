@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_10"
+    android:background="@drawable/square_curved"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_main_badge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_badge_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="CanCre Classic"
+            android:textColor="@color/purple"
+            android:textSize="@dimen/sp_16" />
+
+        <ImageView
+            android:id="@+id/img_drop_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="Description here"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</LinearLayout>

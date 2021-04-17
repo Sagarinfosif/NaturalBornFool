@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_curve"
+    android:layout_margin="@dimen/dp_10"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/sp_16"
+            android:text="@string/welcome_to_your_pro_account"
+            android:textColor="@color/black" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/poppins_light"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:text="@string/you_can_find_analytics_in_settings"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_ok_dialog_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ok"
+                android:layout_gravity="end"
+                android:layout_margin="@dimen/sp_20"
+                android:textStyle="bold"
+                android:padding="@dimen/dp_3"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@id/sticker_recyclerview"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/close_sticker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="close" />
+
+    <Button
+        android:id="@+id/clear_sticker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/close_sticker_button"
+        android:text="clear sticker" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sticker_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_above="@id/sticker_category_recyclerview" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/sticker_category_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_filter" />
+</RelativeLayout>

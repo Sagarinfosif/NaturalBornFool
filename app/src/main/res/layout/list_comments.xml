@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/dp_10">
+
+    <LinearLayout
+        android:id="@+id/rel_lay_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_commenter"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerVertical="true"
+                android:src="@drawable/poat"
+                app:civ_border_color="@color/purple"
+                app:civ_border_width="@dimen/dp_1" />
+
+            <LinearLayout
+                android:id="@+id/ll_user_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_toLeftOf="@id/ll_like_comment"
+                android:layout_toRightOf="@id/img_commenter"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username_commenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="user1234"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/dp_10"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Lorem ipsum is the dummy"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dp_10"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_like_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <com.like.LikeButton
+                    android:id="@+id/img_like_comments"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    app:icon_type="heart"
+                    app:is_enabled="true"
+                    app:liked="false" />
+
+                <TextView
+                    android:id="@+id/tv_like_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="6"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_12" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_35"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/commmentTimeTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="3 min ago"
+                android:textSize="@dimen/sp_10" />
+
+            <TextView
+                android:id="@+id/tv_reply_commentVis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/commmentTimeTV"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/Reply"
+                android:textSize="@dimen/dp_10" />
+
+            <TextView
+                android:id="@+id/tv_Count_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_toRightOf="@id/tv_reply_commentVis"
+                android:fontFamily="@font/poppins_light"
+                android:text="View All 4 Comments"
+                android:textSize="@dimen/dp_10" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_comment_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_lay_comment"
+        android:layout_marginHorizontal="@dimen/dp_30"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/list_comment_reply" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rc_comment_reply">
+
+        <EditText
+            android:id="@+id/et_add_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_toLeftOf="@+id/img_send_comment"
+            android:background="@android:color/transparent"
+            android:ellipsize="end"
+            android:fontFamily="@font/poppins_light"
+            android:hint="Add a comment..."
+            android:imeOptions="actionSend"
+            android:padding="@dimen/dp_5"
+            android:textSize="@dimen/sp_14"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/img_send_comment"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/send"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</RelativeLayout>

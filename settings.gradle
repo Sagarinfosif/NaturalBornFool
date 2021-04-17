@@ -1,0 +1,3 @@
+include ':libbambuser-0.9.22'
+rootProject.name='Cinemaflix'
+include ':app'

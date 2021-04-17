@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.privacysettings.PrivacyAndSafetyActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_back_privacy"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_5"
+            android:onClick="back"
+            android:padding="@dimen/dp_3"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:tint="@color/black" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/privacy_and_safety"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/discoverability"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dp_10"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/poppins_light"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold" />
+
+
+                        <Switch
+                            android:id="@+id/switch_private"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layoutDirection="ltr"
+                            android:text="@string/private_account"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold"
+                            android:theme="@style/switchStyle" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/with_a_private_account_only_users_you_approve_can_foloow_you_and_view_your_videos_and_likes_your_existing_followers_won_t_be_effected"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <!--            <View-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="@dimen/dp_1"-->
+                    <!--                android:layout_marginTop="@dimen/dp_5"-->
+                    <!--                android:background="@color/lightgrey" />-->
+
+                    <!--            <RelativeLayout-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="@dimen/dp_10">-->
+
+                    <!--                <Switch-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:thumbTint="@color/purple"-->
+                    <!--                    android:id="@+id/switch_liked_videos"-->
+                    <!--                    android:trackTint="@color/purple"-->
+                    <!--                    android:text="@string/show_liked_videos"-->
+                    <!--                    android:textColor="@color/black"-->
+                    <!--                    android:textSize="@dimen/sp_12"-->
+                    <!--                    android:textStyle="bold"-->
+                    <!--                    android:layoutDirection="ltr"-->
+                    <!--                    android:layout_alignParentRight="true" />-->
+
+                    <!--            </RelativeLayout>-->
+
+                    <!--            <TextView-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:fontFamily="@font/poppins_light"-->
+                    <!--                android:text="@string/turning_on_will_let_other_people_can_see_your_liked_videos"-->
+                    <!--                android:textColor="@color/black"-->
+                    <!--                android:textSize="@dimen/sp_12" />-->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/lightgrey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <Switch
+                            android:id="@+id/switch_show_profile_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layoutDirection="ltr"
+                            android:text="@string/show_profile_video"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold"
+                            android:checked="true"
+                            android:theme="@style/switchStyle" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/turning_on_will_let_other_people_see_your_profile_video"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/lightgrey" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10">
+
+                        <Switch
+                            android:id="@+id/switch_show_my_following_users"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:checked="true"
+                            android:layoutDirection="ltr"
+                            android:text="@string/show_my_following_users"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold"
+                            android:theme="@style/switchStyle" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/turning_on_will_let_other_people_see_users_you_follow"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_1"
+                        android:layout_marginTop="@dimen/dp_5"
+                        android:background="@color/lightgrey" />
+
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10">
+
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/suggest_your_account_to_others"
+                            android:textColor="@color/black"
+                            android:textDirection="ltr"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="bold"
+                            android:checked="true"
+                            android:theme="@style/switchStyle" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/choose_whether_your_profile_can_be_suggested_to_users_interested_in_account_like_yours"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/lightgrey" />
+
+            <TextView
+                android:id="@+id/tv_head_block"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/block"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/tv_blocked_contacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_10"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/blocked_users"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/lightgrey" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

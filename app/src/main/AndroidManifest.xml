@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="in.pureway.cinemaflix">
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature
+        android:glEsVersion="0x00030001"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".utils.App"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.RejectedVideoShowActivity"></activity>
+        <activity android:name=".activity.videoEditor.DraftSelectedVideoActivity" />
+        <activity android:name=".activity.AboutActivity" />
+        <activity android:name=".activity.WebLinkOpenActivity" />
+        <activity android:name=".activity.GalleryActivity" />
+        <activity android:name=".activity.Video_Recording.PostVideo_A" />
+        <activity android:name=".activity.Video_Recording.GallerySelectedVideo_A" />
+        <activity android:name=".activity.Video_Recording.Preview_Video_A" />
+        <activity android:name=".activity.Video_Recording.Video_Recoder_A" />
+        <activity android:name=".activity.EnterOldNumberActivity" />
+        <activity android:name=".activity.videoEditor.UpdatePhoneOtpActivity" />
+        <activity android:name=".activity.privacysettings.UpdatePhoneNumberActivity" />
+        <activity android:name=".activity.ReportProblemActivity" />
+        <activity android:name=".activity.privacysettings.VerifyAccountActivity" />
+        <activity android:name=".activity.WalletActivity" />
+        <activity android:name=".Live_Stream.PurchaseCoinActivity" />
+        <activity android:name=".Live_Stream.GoLiveActivity" />
+        <activity android:name=".Live_Stream.OtherLiveActivity" />
+        <activity android:name=".Live_Stream.LiveMainActivity" />
+        <activity android:name=".activity.videoEditor.activity.GallerySelectedVideoActivity" />
+        <activity android:name=".activity.videoEditor.activity.MyVideoEditorActivity" />
+        <activity android:name=".activity.privacysettings.PhotofitBadgeActivity" />
+        <activity android:name=".activity.SelectedVideoActivity" />
+        <activity android:name=".activity.privacysettings.HelpCenterActivity" />
+        <activity android:name=".activity.privacysettings.ReportProblemActivity" />
+        <activity android:name=".activity.findFriends.FindFacebookFriendsActivity" />
+        <activity android:name=".activity.findFriends.FindContactActivity" />
+        <activity android:name=".activity.privacysettings.BlockedUserActivity" />
+        <activity android:name=".activity.login_register.ForgotPasswordActivity" />
+        <activity android:name=".activity.privacysettings.AddPhoneActivity" />
+        <activity android:name=".activity.privacysettings.AddEmailActivity" />
+        <activity android:name=".activity.login_register.LanguageSplashActivity" />
+        <activity android:name=".activity.sounds.activity.SearchSoundActivity" />
+        <activity android:name=".activity.findFriends.SearchFriendsActivity" />
+        <activity android:name=".activity.findFriends.InviteFriendsActivity" />
+        <activity android:name=".activity.FollowersFollowingActivity" />
+        <activity android:name=".activity.SoundVideoActivity" />
+        <activity android:name=".activity.editProfile.BioActivity" />
+        <activity android:name=".activity.editProfile.UsernameActivity" />
+        <activity android:name=".activity.editProfile.NameActivity" />
+        <activity android:name=".activity.HashTagVideoActivity" />
+        <activity android:name=".activity.OtherFollowersFollowingActivity" />
+        <activity android:name=".activity.chat.MessageActivity" />
+        <activity android:name=".activity.chat.NotificationMessagesActivity" />
+        <activity android:name=".activity.videoEditor.activity.DraftsActivity" />
+        <activity android:name=".activity.privacysettings.BalanceActivity" />
+        <activity android:name=".activity.privacysettings.SwitchProAccountActiviy" />
+        <activity android:name=".activity.privacysettings.DeleteAccountActivity" />
+        <activity android:name=".activity.privacysettings.ChangePasswordActivity" />
+        <activity android:name=".activity.privacysettings.PasswordCodeActivity" />
+        <activity android:name=".activity.privacysettings.DataSaverActivity" />
+        <activity android:name=".activity.privacysettings.AccessibilityActivity" />
+        <activity android:name=".activity.privacysettings.LanguageActivity" />
+        <activity android:name=".activity.privacysettings.PushNotificationsActivity" />
+        <activity android:name=".activity.privacysettings.CodeActivity" />
+        <activity android:name=".activity.sounds.activity.SoundsActivity" />
+        <activity android:name=".activity.privacysettings.PrivacyAndSafetyActivity" />
+        <activity android:name=".activity.privacysettings.ManageMyAccountActivity" />
+        <activity android:name=".activity.videoEditor.activity.PostPrivacySettingsActivity" />
+        <activity android:name=".activity.videoEditor.activity.PlayerActivity" />
+        <activity
+            android:name=".activity.videoEditor.activity.PostVideoActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activity.UploadFilesActivity" />
+        <activity android:name=".activity.FavoritesProfileActivity" />
+        <activity android:name=".activity.PrivacySettingsActivity" />
+        <activity android:name=".activity.editProfile.EditProfileActivity" />
+        <activity android:name=".activity.OtherUserProfileActivity" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".activity.login_register.WhatsBirthdayActivity" />
+        <activity android:name=".activity.login_register.VerifyOTPActivity" />
+        <activity android:name=".activity.login_register.RegisterActivity" />
+        <activity android:name=".activity.login_register.LoginActivity" />
+        <activity android:name=".activity.findFriends.FindFriendsActivity" />
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <provider -->
+        <!-- android:name="com.facebook.FacebookContentProvider" -->
+        <!-- android:authorities="com.facebook.app.FacebookContentProvider565711567443602" -->
+        <!-- android:exported="true" /> -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".javaClasses.firebaseMessaging"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".javaClasses.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".FileUploadService"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3462214602007593~3578342305" />
+    </application>
+
+</manifest>

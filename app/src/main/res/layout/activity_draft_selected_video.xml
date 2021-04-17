@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.videoEditor.activity.DraftSelectedVideoActivity">
+
+    <ImageButton
+        android:elevation="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@drawable/ic_back12"
+        android:id="@+id/btn_next_player_activity"
+        android:padding="@dimen/dp_15"/>
+
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/playerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/black"
+        android:padding="0dp"
+        app:controller_layout_id="@layout/item_player_controler"
+        app:resize_mode="fit"
+        app:show_timeout="1000"
+        app:use_artwork="true"
+        app:shutter_background_color="@color/black" />
+
+</RelativeLayout>

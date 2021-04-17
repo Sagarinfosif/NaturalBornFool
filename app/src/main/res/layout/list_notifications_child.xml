@@ -1,0 +1,985 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_like_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.80"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_like_noti"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <TextView
+                            android:id="@+id/tv_like_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="UpkarSingh45\nladdiariyan and 4 others like your videos. 17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_weight="0.20"
+                    android:visibility="visible">
+
+                    <!--                <Button-->
+                    <!--                    android:id="@+id/btn_watch_noti"-->
+                    <!--                    android:layout_width="@dimen/dp_150"-->
+                    <!--                    android:layout_height="@dimen/dp_40"-->
+                    <!--                    android:layout_centerInParent="true"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_margin="@dimen/dp_10"-->
+                    <!--                    android:background="@drawable/btn_sky_bg"-->
+                    <!--                    android:fontFamily="@font/poppins_light"-->
+                    <!--                    android:text="Watch"-->
+                    <!--                    android:textAllCaps="false"-->
+                    <!--                    android:textColor="@color/white"-->
+                    <!--                    android:visibility="visible" />-->
+
+
+                    <ImageView
+                        android:id="@+id/img_like_video"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher_background"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_AdminMassage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/grey_stroke"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_margin="@dimen/dp_10"
+            android:padding="@dimen/dp_10"
+            app:cardCornerRadius="@dimen/dp_10">
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.80"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_ll_AdminMassage"
+                        android:layout_width="@dimen/dp_40"
+                        android:layout_height="@dimen/dp_40"
+                        android:src="@drawable/app_icon"
+                        android:visibility="visible" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:singleLine="true"
+                            android:text="Message from CINEMAFLIX "
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_14"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_ll_AdminMassage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:singleLine="true"
+                            android:text="UpkarSingh45\nladdiariyan and 4 others like your videos. 17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_12"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tv_ll_AdminTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:fontFamily="@font/poppins_light"
+                            android:singleLine="true"
+                            android:text="17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_12"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- <View-->
+                <!-- android:layout_width="match_parent"-->
+                <!-- android:layout_height="@dimen/dp_1"-->
+                <!-- android:layout_gravity="bottom"-->
+                <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                <!-- android:layout_marginTop="@dimen/dp_15"-->
+                <!-- android:layout_marginRight="@dimen/dp_20"-->
+                <!-- android:background="@color/grey" />-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginVertical="@dimen/dp_5"
+        app:cardCornerRadius="@dimen/dp_10">
+
+        <LinearLayout
+            android:id="@+id/ll_follow_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_stroke"
+
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10"
+            android:visibility="gone">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_follow_noti"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <TextView
+                            android:id="@+id/tv_follow_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:maxLines="4"
+                            android:text="UpkarSingh45\nstarted following you. \n17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dp_10"
+                    android:layout_weight="0.35"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btn_follow_signin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="@dimen/dp_5"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Follow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btn_unfollow_noti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginVertical="@dimen/dp_5"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Unfollow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_weight=".4"-->
+    <!--                android:layout_height="@dimen/dp_1"-->
+    <!--                android:layout_gravity="bottom"-->
+    <!--                android:layout_marginLeft="@dimen/dp_20"-->
+    <!--                android:layout_marginTop="@dimen/dp_5"-->
+    <!--                android:layout_marginRight="@dimen/dp_20"-->
+    <!--                android:background="@color/grey" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_weight=".4"-->
+    <!--                android:layout_height="@dimen/dp_1"-->
+    <!--                android:visibility="invisible"/>-->
+    <!--        </LinearLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll_rejectVideo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginVertical="@dimen/dp_5"
+
+            app:cardCornerRadius="@dimen/dp_10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_ll_rejectVideo"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_launcher_background"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_ll_rejectVideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:maxLines="4"
+                            android:text="UpkarSingh45\nstarted following you. \n17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="Watch"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_ReportDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginVertical="@dimen/dp_5"
+            app:cardCornerRadius="@dimen/dp_10">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img__ReportDelete"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_launcher_background"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_ReportDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:maxLines="4"
+                            android:text="UpkarSingh45\nstarted following you. \n17 h"
+
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12"
+                            android:textStyle="normal" />
+
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_Delete_Video"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Watch"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_ReportApprove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_10"
+            android:layout_marginVertical="@dimen/dp_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.65"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img__ReportApprove"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_launcher_background"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/tv_ReportApprove"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_light"
+                            android:maxLines="4"
+                            android:text="UpkarSingh45\nstarted following you. \n17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/dp_14" />
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_approve_Vide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Watch"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:visibility="visible" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_comment_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_10">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_weight="1.10"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_comment_noti"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <TextView
+                            android:id="@+id/tv_comment_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="UpkarSingh45\nladdiariyan and 4 others commented on this videos. 17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_weight=".20"
+                    android:visibility="visible">
+
+
+                    <!--                <Button-->
+                    <!--                    android:id="@+id/btn_watchComment_noti"-->
+                    <!--                    android:layout_width="@dimen/dp_150"-->
+                    <!--                    android:layout_height="@dimen/dp_40"-->
+                    <!--                    android:layout_centerInParent="true"-->
+                    <!--                    android:layout_gravity="center_horizontal"-->
+                    <!--                    android:layout_margin="@dimen/dp_10"-->
+                    <!--                    android:background="@drawable/btn_sky_bg"-->
+                    <!--                    android:fontFamily="@font/poppins_light"-->
+                    <!--                    android:text="Watch"-->
+                    <!--                    android:textAllCaps="false"-->
+                    <!--                    android:textColor="@color/white"-->
+                    <!--                    android:visibility="visible" />-->
+
+                    <ImageView
+                        android:id="@+id/img_comment_video"
+                        android:layout_width="@dimen/dp_25"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_centerInParent="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_launcher_background"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_uploadVideo_notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_10"
+
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/dp_10"
+                    android:layout_weight="0.80"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_videoUpload_noti"
+                            android:layout_width="@dimen/dp_40"
+                            android:layout_height="@dimen/dp_40"
+                            android:src="@drawable/ic_launcher_background" />
+
+                        <TextView
+                            android:id="@+id/tv_videoUpload_data"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:fontFamily="@font/poppins_light"
+                            android:text="UpkarSingh45\nladdiariyan and 4 others commented on this videos. 17 h"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <!-- <View-->
+                    <!-- android:layout_width="match_parent"-->
+                    <!-- android:layout_height="@dimen/dp_1"-->
+                    <!-- android:layout_gravity="bottom"-->
+                    <!-- android:layout_marginLeft="@dimen/dp_20"-->
+                    <!-- android:layout_marginTop="@dimen/dp_15"-->
+                    <!-- android:layout_marginRight="@dimen/dp_20"-->
+                    <!-- android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/dp_10"
+                    android:layout_weight="0.35"
+                    android:visibility="visible">
+
+
+                    <Button
+                        android:id="@+id/btn_videoUpload_noti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp_40"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="@dimen/dp_10"
+                        android:background="@drawable/btn_bg"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="Watch"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:visibility="visible" />
+
+                    <!--                <ImageView-->
+                    <!--                    android:visibility="visible"-->
+                    <!--                    android:id="@+id/img_comment_video"-->
+                    <!--                    android:layout_width="@dimen/dp_25"-->
+                    <!--                    android:layout_height="@dimen/dp_40"-->
+                    <!--                    android:layout_centerInParent="true"-->
+                    <!--                    android:scaleType="fitXY"-->
+                    <!--                    android:src="@drawable/ic_launcher_background" />-->
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:orientation="horizontal">-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:layout_gravity="bottom"-->
+        <!--                android:layout_marginLeft="@dimen/dp_20"-->
+        <!--                android:layout_marginTop="@dimen/dp_5"-->
+        <!--                android:layout_marginRight="@dimen/dp_20"-->
+        <!--                android:background="@color/grey" />-->
+
+        <!--            <View-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight=".4"-->
+        <!--                android:layout_height="@dimen/dp_1"-->
+        <!--                android:visibility="invisible"/>-->
+        <!--        </LinearLayout>-->
+    </LinearLayout>
+
+</LinearLayout>

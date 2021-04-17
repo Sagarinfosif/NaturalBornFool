@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="privacy_settings">गोपनीय सेटिंग</string>
+    <string name="live_photo">लाइव फोटो</string>
+    <string name="email"> ईमेल</string>
+    <string name="enter_your_email_address">अपना ईमेल पता दर्ज करें</string>
+    <string name="we_will_send_you_otp_on_the_entered_email_to_verify_your_email">हम आपके ईमेल को सत्यापित करने के लिए आपको दर्ज किए गए ईमेल पर OTP भेजेंगे।</string>
+    <string name="next">आगे</string>
+    <string name="phone">फ़ोन</string>
+    <string name="enter_your_phone_number">अपना दूरभाष क्रमांक दर्ज करें</string>
+    <string name="we_will_send_you_otp_on_the_entered_phone_number_to_verify_your_phone_number">हम आपको अपना फ़ोन नंबर सत्यापित करने के लिए दर्ज फ़ोन नंबर पर OTP भेजेंगे।</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="balance">संतुलन</string>
+    <string name="total_coins">कुल सिक्के</string>
+    <string name="buy_coins">सिक्के खरीदें</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="bio">जैव</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_new_password">नए पासवर्ड की पुष्टि करें</string>
+    <string name="change">परिवर्तन</string>
+    <string name="photofit_code">Cinemaflix कोड</string>
+    <string name="scan_the_qr_code_to_add_me_as_a_friend">मुझे एक मित्र के रूप में जोड़ने के लिए QR कोड स्कैन करें</string>
+    <string name="save_image">छवि सहेजें</string>
+    <string name="scan_code">स्कैन कोड</string>
+    <string name="content_preferences">सामग्री प्राथमिकताएँ</string>
+    <string name="video_languages">वीडियो भाषाएँ</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="delete">हटाएं</string>
+    <string name="add_language">भाषा जोड़ें</string>
+    <string name="your_language_preference_will_help_us_customize_your_viewing_preferences">आपकी भाषा वरीयता हमें आपकी देखने की वरीयताओं को अनुकूलित करने में मदद करेगी</string>
+    <string name="data_saver">डेटा सेवर</string>
+    <string name="data_saver_will_reduce_your_cellular_data_usage_videos_may_be_at_lower_resolution_or_take_longer_to_load_this_wont_apply_when_you_re_on_wi_fi">डेटा सेवर आपके सेल्युलर डेटा उपयोग को कम करेगा। वीडियो कम रिज़ॉल्यूशन पर हो सकते हैं या लोड होने में अधिक समय ले सकते हैं। जब आप वाई-फाई पर लागू होते हैं तो यह अभ्यस्त नहीं होगा।</string>
+    <string name="delete_account">खाता हटा दो</string>
+    <string name="verification">सत्यापन</string>
+    <string name="to_continue_you_need_to_complete_sms_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">जारी रखने के लिए, आपको पहले एसएमएस सत्यापन पूरा करना होगा। आपको कोड भेजें के टैप करने के बाद एक सत्यापन कोड प्राप्त होगा</string>
+    <string name="verification_code">पुष्टि संख्या</string>
+    <string name="send_code">कोड भेजो</string>
+    <string name="digital_wellbeing">डिजिटल भलाई</string>
+    <string name="screen_time_management">स्क्रीन टाइम मैनेजमेंट</string>
+    <string name="restricted_mode">प्रतिबंधित मोड</string>
+    <string name="drafts_are_only_visible_to_you_uninstalling_photofit_will_delete_all_drafts">ड्राफ्ट केवल आपको दिखाई देते हैं। Cinemaflix को अनइंस्टॉल करने से सभी ड्राफ्ट हट जाएंगे।</string>
+    <string name="remove">हटाना</string>
+    <string name="post">डालना</string>
+    <string name="add_a_description">व्याख्या करें...</string>
+    <string name="edit_profile">प्रोफ़ाइल संपादित करें</string>
+    <string name="change_photo">तस्वीर बदलिये</string>
+    <string name="change_video">वीडियो बदलें</string>
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="instagram">इंस्टाग्राम</string>
+    <string name="youtube">यूट्यूब</string>
+    <string name="add_instagram_to_your_profile">अपनी प्रोफ़ाइल में Instagram जोड़ें</string>
+    <string name="add_youtube_to_your_profile">अपने प्रोफ़ाइल में Youtube जोड़ें</string>
+    <string name="favorites">पसंदीदा</string>
+    <string name="find_friends">मित्रों को खोजें</string>
+    <string name="search">खोज</string>
+    <string name="invite_friends">मित्रों को आमंत्रित करें</string>
+    <string name="find_contact">संपर्क का पता लगाएं</string>
+    <string name="find_facebook_friend">फेसबुक फ्रेंड ढूंढे</string>
+    <string name="enter_your_new_password">अपना नया पासवर्ड दर्ज करें</string>
+    <string name="add_sound">ध्वनि जोड़ें</string>
+    <string name="labourday">#मजदूर दिवस</string>
+    <string name="add_to_favorites">पसंदीदा में जोड़े</string>
+    <string name="this_labourday_let_us_see_what_s_your_future_job">इस #Labourday हमें देखते हैं कि आपका भविष्य क्या है।</string>
+    <string name="log_in_to_photofit">Cinemaflix में लॉग इन करें</string>
+    <string name="email_or_phone">ईमेल या फोन</string>
+    <string name="password">कुंजिका</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="sign_in">साइन इन करें</string>
+    <string name="or">या</string>
+    <string name="don_t_have_an_account">खाता नहीं है?</string>
+    <string name="manage_my_account">मेरे खाते का प्रबंधन</string>
+    <string name="add_phone">Add Phone</string>
+    <string name="save_login_info">लॉगिन जानकारी सहेजें</string>
+    <string name="switch_to_pro_account">प्रो खाते पर स्विच करें</string>
+    <string name="upkar_singh">Upkar Singh</string>
+    <string name="type_your_message">अपना संदेश टाइप करें</string>
+    <string name="hi_upkar_how_are_you">हाय उपकार !! क्या हाल है?</string>
+    <string name="name">नाम</string>
+    <string name="save">सहेजें</string>
+    <string name="messages">संदेश</string>
+    <string name="followers">समर्थक</string>
+    <string name="videos">वीडियो</string>
+    <string name="like">पसंद</string>
+    <string name="follow">का पालन करें</string>
+    <string name="verify_otp">OTP को सत्यापित करें</string>
+    <string name="enter_4_digit_code">4-अंकीय कोड दर्ज करें</string>
+    <string name="to_set_your_password_enter_4_digit_code_send_nto_91_99999_33333">अपना पासवर्ड सेट करने के लिए, 4-अंकीय कोड send \ nto + 91-99999-33333 दर्ज करें</string>
+    <string name="done">पूर्ण</string>
+    <string name="resend_otp"> OTP पुनः भेजें</string>
+    <string name="allow_comments">टिप्पणियों की अनुमति दें</string>
+    <string name="allow_duet_and_react">युगल और प्रतिक्रिया की अनुमति दें</string>
+    <string name="allow_downloads">डाउनलोड की अनुमति दें</string>
+    <string name="describe_your_video">अपने वीडियो का वर्णन करें</string>
+    <string name="hashtag">#हैशटैग</string>
+    <string name="who_can_view_this_video">इस वीडियो को कौन देख सकता है</string>
+    <string name="save_to_device">डिवाइस पर सहेजें</string>
+    <string name="share_posted_video_to">पोस्ट वीडियो को साझा करें:</string>
+    <string name="drafts">ड्राफ्ट</string>
+    <string name="discoverability">खोजे जाने</string>
+    <string name="with_a_private_account_only_users_you_approve_can_foloow_you_and_view_your_videos_and_likes_your_existing_followers_won_t_be_effected">एक निजी खाते के साथ, केवल आपके द्वारा स्वीकृत उपयोगकर्ता ही आपको फ़ोलो कर सकते हैं और आपके वीडियो और लाइक देख सकते हैं। आपके मौजूदा अनुयायियों ने प्रभावित नहीं किया है।</string>
+    <string name="show_liked_videos">लाइक किए गए वीडियो दिखाएं</string>
+    <string name="suggest_your_account_to_others">अपना खाता दूसरों को सुझाएं</string>
+    <string name="choose_whether_your_profile_can_be_suggested_to_users_interested_in_account_like_yours">चुनें कि क्या आपका प्रोफ़ाइल आपके जैसे खाते में रुचि रखने वाले उपयोगकर्ताओं को सुझाया जा सकता है।</string>
+    <string name="safety">सुरक्षा</string>
+    <string name="who_can_comment_on_your_videos">आपके वीडियो पर कौन टिप्पणी कर सकता है</string>
+    <string name="everyone">हर कोई</string>
+    <string name="who_can_react_to_your_videos">आपके वीडियो पर कौन प्रतिक्रिया दे सकता है</string>
+    <string name="who_can_duet_with_your_videos">आपके वीडियो के साथ कौन युगल कर सकता है</string>
+    <string name="who_can_send_you_direct_message">जो आपको सीधा संदेश भेज सकता है</string>
+    <string name="allow_your_videos_to_be_downloaded">अपने वीडियो डाउनलोड करने दें</string>
+    <string name="off">बंद</string>
+    <string name="who_can_view_your_like_videos">आपके वीडियो को कौन देख सकता है</string>
+    <string name="only_me">केवल मैं</string>
+    <string name="comment_filters">टिप्पणी फ़िल्टर</string>
+    <string name="on">चालू करो</string>
+    <string name="interactions">सहभागिता</string>
+    <string name="likes">को यह पसंद है</string>
+    <string name="comments">टिप्पणियाँ</string>
+    <string name="new_followers">नए अनुयायियों</string>
+    <string name="mentions">का उल्लेख है</string>
+    <string name="direct_messages">सीधे संदेश</string>
+    <string name="video_updates">वीडियो अपडेट</string>
+    <string name="videos_from_accounts_you_follow">आपके द्वारा अनुसरण किए गए खातों के वीडियो</string>
+    <string name="video_suggestions">वीडियो सुझाव</string>
+    <string name="live">लाइव</string>
+    <string name="livestreams_from_accounts_you_follow">आपके द्वारा अनुसरण किए जाने वाले खातों से प्राप्तियां</string>
+    <string name="register">साइन अप करें</string>
+    <string name="send_otp">OTP भेजें</string>
+    <string name="have_an_account">खाता होना?</string>
+    <string name="search_sounds">लगता है खोजें</string>
+    <string name="sounds">ध्वनि</string>
+    <string name="choose_a_category">कोई श्रेणी चुनें</string>
+    <string name="select_a_category_to_get_customized_analytics_in_the_future_this_category_wont_be_displayed_publicly">भविष्य में अनुकूलित एनालिटिक्स प्राप्त करने के लिए एक श्रेणी का चयन करें। इस श्रेणी को सार्वजनिक रूप से प्रदर्शित नहीं किया जाएगा।</string>
+    <string name="public_figure">सार्वजनिक आंकड़ा</string>
+    <string name="personal_blog">व्यक्तिगत ब्लॉग</string>
+    <string name="education">शिक्षा</string>
+    <string name="media">मीडिया</string>
+    <string name="music_dance">संगीत / नृत्य</string>
+    <string name="beauty_fashion">सौंदर्य / फैशन</string>
+    <string name="medical_health">मेडिकल /हेल्थ</string>
+    <string name="entertainment">मनोरंजन</string>
+    <string name="sports_fitness">खेल / फिटनेस</string>
+    <string name="files">फ़ाइलें</string>
+    <string name="usernames_can_contain_only_letters_numbers_underscores_and_periods_changing_your_username_will_also_change_your_profile_link">उपयोगकर्ता नाम में केवल अक्षर, संख्या, अंडरस्कोर और अवधि शामिल हो सकते हैं। आपका उपयोगकर्ता नाम बदलने से आपका प्रोफ़ाइल लिंक भी बदल जाएगा।</string>
+    <string name="enter_your_otp">अपना OTP दर्ज करें</string>
+    <string name="select_sound">ध्वनि का चयन करें</string>
+    <string name="speed">गति</string>
+    <string name="what_s_your_birthday">आपका जन्मदिन कब है</string>
+    <string name="your_birthday_wont_be_shown_publicly">आपके जन्मदिन को सार्वजनिक रूप से नहीं दिखाया जाएगा</string>
+    <string name="delete_video">वीडियो हटाएं</string>
+    <string name="share_video">वीडियो शेयर करें</string>
+    <string name="ok">ठीक है</string>
+    <string name="total_likes">कुल पसंद</string>
+    <string name="manavmittal36_received_0_likes">manavmittal36 received 0 likes.</string>
+    <string name="welcome_to_your_pro_account">अपने प्रो खाते में आपका स्वागत है</string>
+    <string name="you_can_find_analytics_in_settings">आप सेटिंग्स में एनालिटिक्स पा सकते हैं</string>
+    <string name="edited_within_this_week">इस सप्ताह के भीतर संपादित किया गया</string>
+
+
+    <string name="facebook_app_id">407953477029093</string>
+    <string name="fb_login_protocol_scheme">fb407953477029093</string>
+
+
+
+    <string name="client_id" translatable="false">1422073964848616</string>
+    <string name="redirect_url" translatable="false">https://instagram.com/</string>
+    <string name="base_url" translatable="false">https://api.instagram.com/</string>
+    <string name="get_user_info_url" translatable="false">https://api.instagram.com/v1/users/self/?access_token=</string>
+
+    <string name="following">समर्थक</string>
+    <string name="report"> रिपोर्ट</string>
+    <string name="turning_on_will_let_other_people_see_your_profile_video">चालू करने से अन्य लोग आपके प्रोफ़ाइल वीडियो को देख पाएंगे।</string>
+    <string name="show_profile_video">प्रोफ़ाइल वीडियो दिखाएं</string>
+    <string name="turning_on_will_let_other_people_see_users_you_follow">चालू करने से अन्य लोग आपके द्वारा अनुसरण किए जाने वाले उपयोगकर्ताओं को देख पाएंगे।</string>
+    <string name="block">खंड मैथा</string>
+    <string name="blocked_users">रोके गए उपयोगकर्ता</string>
+    <string name="no_blocked_users">कोई अवरुद्ध उपयोगकर्ता नहीं</string>
+    <string name="show_my_following_users">मेरे निम्नलिखित उपयोगकर्ताओं को दिखाएं</string>
+    <string name="turning_on_will_let_other_people_can_see_your_liked_videos">चालू करने से अन्य लोग आपके पसंद किए गए वीडियो देख सकते हैं।</string>
+    <string name="unblock">अनब्लॉक</string>
+    <string name="private_account">निजी खाता</string>
+    <string name="Reply">जवाब दे</string>
+    <string name="disable_comments">इस वीडियो की टिप्पणियाँ बंद हैं।</string>
+
+    <string name="set_privacy_for_video">वीडियो के लिए गोपनीयता सेट करें</string>
+
+    <string name="posts">पोस्ट</string>
+    <string name="removeFromFvrt">पसंदीदा से निकालें</string>
+    <string name="addToFvrt">पसंदीदा में जोड़ें</string>
+    <string name="hashtags">हैशटैग</string>
+    <string name="notifications">सूचनाएं</string>
+    <string name="friends">दोस्त</string>
+    <string name="add_phine_number">फोन नंबर डालें</string>
+    <string name="add_email">ईमेल जोड़ें</string>
+    <string name="account">लेखा</string>
+    <string name="privacy_and_safety">गोपनीयता और सुरक्षा</string>
+    <string name="share_profile">प्रोफ़ाइल साझा करें</string>
+    <string name="code">कोड</string>
+    <string name="push_notifications">सूचनाएं भेजना</string>
+    <string name="language">भाषा</string>
+    <string name="accessibility">सरल उपयोग</string>
+    <string name="report_a_problem">समस्या के बारे में बताएं</string>
+    <string name="yesterday">बिता कल</string>
+    <string name="people">लोग</string>
+    <string name="trending">रुझान</string>
+    <string name="_hashatgs">#हैशटैग</string>
+    <string name="report_user">उपयोगकर्ता को रिपोर्ट करें</string>
+    <string name="mute_notifications">सूचनाएं म्यूट करें</string>
+    <string name="why_are_you_reporting">आप क्यों रिपोर्ट कर रहे हैं</string>
+    <string name="it_s_spam">यह स्पैम है</string>
+    <string name="effects">प्रभाव</string>
+    <string name="no_videos">कोई वीडियो नहीं</string>
+    <string name="shoot_with_this_sound">इस ध्वनि के साथ बनाओ</string>
+
+    <string name="general">सामान्य</string>
+    <string name="support">सहयोग</string>
+    <string name="help_center">सहायता केंद्र</string>
+    <string name="safety_center">सुरक्षा केंद्र</string>
+    <string name="logout">लॉग आउट</string>
+
+    <string name="no_following_users">उपयोगकर्ता के बाद नहीं</string>
+    <string name="no_followers">कोई अनुयायी नहीं</string>
+    <string name="no_notifications">कोई सूचनाएं नहीं</string>
+    <string name="sign_up_for_an_account">खाते के लिए साइन अप करें</string>
+
+    <string name="to_continue_you_need_to_complete_email_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">जारी रखने के लिए, आपको पहले EMAIL सत्यापन पूरा करना होगा। आपको कोड भेजें के टैप करने के बाद एक सत्यापन कोड प्राप्त होगा</string>
+    <string name="photofit_contacts">Cinemaflix संपर्क उपयोगकर्ता</string>
+    <string name="report_problem">समस्या की सूचना दें</string>
+    <string name="search_contacts">संपर्क खोजें</string>
+
+    <string name="lanuageConfirmation">क्या आप भाषा को बदलना सुनिश्चित करते हैं</string>
+    <string name="continue112">जारी रखें</string>
+    <string name="or_register_with">या रजिस्टर करें</string>
+    <string name="login_to_use_thisfeature">इस सुविधा का उपयोग करने के लिए कृपया लॉगिन या पंजीकरण करें!</string>
+    <string name="draftes_empty">ड्राफ्ट खाली हैं</string>
+    <string name="follow_back">Follow Back</string>
+    <string name="message">संदेश</string>
+    <string name="no_messages">कोई संदेश नहीं</string>
+    <string name="no_conversation_found">कोई बातचीत नहीं</string>
+
+    <string name="add_a_comment">एक टिप्पणी जोड़ने...</string>
+    <string name="no_comments">कोई टिप्पणी नहीं</string>
+    <string name="unmute_notifications">अनम्यूट सूचनाएं</string>
+    <string name="no_contacts">कोई संपर्क नहीं</string>
+    <string name="no_hashtags">हैशटैग नहीं</string>
+    <string name="photofit_badge">Cinemaflix बैज</string>
+
+    <string name="delete_comment">टिप्पणी हटाएँ</string>
+    <string name="delete_chat">चैट हटाएं</string>
+    <string name="clear">स्पष्ट</string>
+    <string name="beautify">सुंदर बनाएं</string>
+    <string name="filter">फ़िल्टर</string>
+    <string name="virtual">वास्तविक</string>
+    <string name="problem_empty">समस्या खाली नहीं हो सकती।</string>
+    <string name="delete_message">संदेश को हटाएं</string>
+    <string name="sign_up_with_phone_number_or_email">फ़ोन नंबर के साथ साइन अप करें</string>
+    <string name="for_you">छोटी वीडियो</string>
+    <string name="_"><![CDATA[<<]]></string>
+    <string name="coins">सिक्के</string>
+    <string name="trial">ट्रायल</string>
+    <string name="purchase_coins">खरीद सिक्का</string>
+    <string name="share_gift">शेयर उपहार</string>
+    <string name="get_coins">सिक्के प्राप्त करे</string>
+    <string name="zero">0</string>
+    <string name="you_sent_a_gift_to">आपने एक उपहार भेजा</string>
+    <string name="you_received_a_gift_from">आप से एक उपहार प्राप्त हुआ</string>
+    <string name="sent">भेज दिया</string>
+    <string name="received">प्राप्त किया</string>
+    <string name="verify_account">खाता सत्यापित करें</string>
+    <string name="aadhar_or_pan">Acadadhar या PAN Numbercount सत्यापित करें</string>
+    <string name="verify">सत्यापित करें</string>
+    <string name="your_request_for_account_verification">खाता सत्यापन के लिए आपका अनुरोध \ n असफल रूप से व्यवस्थापक को भेजा जाता है। सत्यापन की प्रतिक्रिया के लिए \ n कृपया प्रतीक्षा करें।</string>
+    <string name="okay">ठीक है</string>
+    <string name="gift">उपहार</string>
+    <string name="aadhar_card">आधार कार्ड</string>
+    <string name="pan_card">पैन कार्ड</string>
+    <string name="share">शेयर</string>
+    <string name="duet">युगल</string>
+    <string name="you_need_a_cancre_account_nto_continue">आपको एक Cinemaflix खाता \ n जारी रखना चाहिए</string>
+    <string name="or_sign_up_with">या के साथ साइन अप करें</string>
+    <string name="sign_up">साइन अप करें</string>
+    <string name="already_have_an_account">पहले से ही एक खाता है?</string>
+
+    <string-array name="video_privacy">
+        <item>जनता</item>
+        <item>निजी</item>
+    </string-array>
+
+    <array name="email_phone">
+        <item>ईमेल</item>
+        <item>फ़ोन</item>
+    </array>
+
+    <string-array name="search_list">
+        <item>सब</item>
+        <item>लोग</item>
+        <item>वीडियो</item>
+        <item>#हैशटैग</item>
+<!--        <item>ध्वनि</item>-->
+    </string-array>
+
+    <string-array name="search_tag_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+</resources>

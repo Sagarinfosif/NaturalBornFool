@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.findFriends.FindFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:padding="@dimen/dp_3"
+            android:id="@+id/img_back_find"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/find_friends"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/sp_16"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/grey"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_margin="@dimen/dp_20"
+        app:cardBackgroundColor="@color/lightgrey"
+        app:cardCornerRadius="@dimen/dp_20">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_search_black_24dp"
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableTint="@color/black"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:hint="@string/search"
+            android:maxLines="1"
+            android:focusable="false"
+            android:paddingLeft="@dimen/dp_10"
+            android:singleLine="true"
+            android:id="@+id/et_search_friends"
+            android:editable="false"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_invite_friends"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/rl_ff"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/sp_10"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="@dimen/dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_add_profile"
+                android:tint="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_ff"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/invite_friends"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:tint="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_find_contact"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/rl_fc"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/sp_10"
+            app:cardBackgroundColor="@color/green"
+            app:cardCornerRadius="@dimen/dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_contact_book"
+                android:tint="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_fc"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/photofit_contacts"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:tint="@color/grey" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_fb_friend"
+        android:layout_marginTop="@dimen/dp_10">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/rl_ffc"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/sp_10"
+            app:cardBackgroundColor="@color/blue"
+            app:cardCornerRadius="@dimen/dp_20">
+
+            <ImageView
+                android:layout_width="@dimen/dp_20"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_facebookkk"
+                android:tint="@color/white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rl_ffc"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/find_facebook_friend"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:tint="@color/grey" />
+
+    </RelativeLayout>
+
+</LinearLayout>

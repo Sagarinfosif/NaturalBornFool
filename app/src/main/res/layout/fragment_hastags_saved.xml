@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.pureway.cinemaflix.fragments.favorites.HastagsSavedFragment">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       app:cardUseCompatPadding="true"
+       android:id="@+id/card_no_hashtags"
+       android:visibility="gone"
+       android:layout_centerInParent="true"
+       android:layout_marginHorizontal="@dimen/dp_20"
+       app:cardCornerRadius="@dimen/dp_10">
+
+      <TextView
+          android:layout_margin="@dimen/dp_30"
+          android:layout_width="wrap_content"
+          android:layout_gravity="center"
+          android:textColor="@color/black"
+          android:layout_height="wrap_content"
+          android:text="@string/no_hashtags"
+          android:fontFamily="@font/poppins_light"
+          />
+
+   </com.google.android.material.card.MaterialCardView>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/recycler_Saved_hastags"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+       android:orientation="vertical"
+       tools:listitem="@layout/list_saved_hashtags"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "544383069475",
+    "firebase_url": "https://cinemaflix-218bb.firebaseio.com",
+    "project_id": "cinemaflix-218bb",
+    "storage_bucket": "cinemaflix-218bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544383069475:android:e8a25baaf9efc5506ab096",
+        "android_client_info": {
+          "package_name": "in.pureway.cinemaflix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544383069475-ips23pehisp7brncfmagsppmbbpi65nt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.pureway.cinemaflix",
+            "certificate_hash": "b6f1beb7260ceeac86ce0bf4bd55d877f4f4a341"
+          }
+        },
+        {
+          "client_id": "544383069475-5k638c725e8svm8lmntfk11n8eebnjmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBesbD639AQvuz5cug13fl2aN_uVay4zOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544383069475-5k638c725e8svm8lmntfk11n8eebnjmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

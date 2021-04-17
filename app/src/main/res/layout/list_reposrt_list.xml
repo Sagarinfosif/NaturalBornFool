@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_report"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:elevation="@dimen/dp_5"
+    android:orientation="horizontal"
+    android:padding="@dimen/dp_5">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_blank_check_box"
+        android:id="@+id/img_check_box"
+
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:layout_height="wrap_content"/>
+    <CheckBox
+        android:visibility="gone"
+        android:id="@+id/check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
+
+    <TextView
+
+        android:id="@+id/tv_report_name"
+        style="@style/text15sp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_5"
+        android:text="Report name"
+        android:textColor="@color/black" />
+
+</LinearLayout>

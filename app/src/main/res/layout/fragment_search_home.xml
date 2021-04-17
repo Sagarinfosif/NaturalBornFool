@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="in.pureway.cinemaflix.fragments.homefrags.SearchHomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_not_logged_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_90"
+                android:layout_height="@dimen/dp_90"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_user"
+                android:tint="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:fontFamily="@font/poppins_light"
+                android:text="Sign up for an account"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_16" />
+
+            <Button
+                android:id="@+id/btn_sign_up_search"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_50"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/btn_bg"
+                android:fontFamily="@font/poppins_light"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search_logged_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dp_10"
+        android:visibility="gone">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_15"
+            android:layout_marginBottom="@dimen/dp_10"
+            app:cardBackgroundColor="@color/lightgrey"
+            app:cardCornerRadius="@dimen/dp_8"
+            app:cardUseCompatPadding="true">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:drawablePadding="@dimen/dp_10"
+                android:drawableTint="@color/black"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center_vertical"
+                android:hint="Search"
+                android:maxLines="1"
+                android:padding="@dimen/dp_10"
+                android:paddingLeft="@dimen/dp_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_searchTags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="2"
+            tools:listitem="@layout/list_search_categories" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:fontFamily="@font/poppins_light"
+            android:text="Trending hashtag"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:paddingBottom="?android:actionBarSize"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_tradings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:layout_margin="@dimen/dp_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/grey_stroke">
+
+                        <RelativeLayout
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:text="@string/trending"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_15"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totalVideoTV"
+                                android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+                                android:paddingLeft="@dimen/dp_10"
+                                android:background="@drawable/darkgrey_square"
+                                android:layout_alignParentRight="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp_20"
+                                android:layout_marginRight="@dimen/dp_20"
+                                android:text="00"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/sp_15"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_videos_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_5"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_10"
+                        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/list_video_search" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hashTags"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:text="@string/_hashatgs"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_hashTags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_5"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/list_hash_tags_search" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_sound"
+
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:text="@string/sounds"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_sounds"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:layout_marginRight="@dimen/dp_20"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/dp_5"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/list_search_sound" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_people"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/people"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp_15"
+                        android:textStyle="bold" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_peoples"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_10"
+                        android:nestedScrollingEnabled="false"
+                        android:orientation="vertical"
+                        android:paddingBottom="?android:actionBarSize"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="2"
+                        tools:listitem="@layout/list_people_search" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_20"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="2"
+            tools:listitem="@layout/list_search_trending" />
+
+    </LinearLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right">
+
+        <LinearLayout
+            android:layout_margin="@dimen/dp_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_40"
+                android:background="@color/darkgrey"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="@dimen/dp_40"
+                    android:background="@color/darkgrey"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_150"
+                android:background="@color/darkgrey"/>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="@color/darkgrey"/>
+
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="@color/darkgrey"/>
+                <View
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_80"
+                    android:background="@color/darkgrey"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_100"
+                android:background="@color/darkgrey"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:background="@color/darkgrey"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:background="@color/darkgrey"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:background="@color/darkgrey"/>
+
+            <View
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_70"
+                android:background="@color/darkgrey"/>
+
+
+        </LinearLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</LinearLayout>

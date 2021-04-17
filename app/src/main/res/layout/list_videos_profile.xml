@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_130"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/dp_3"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_130"
+        >
+
+        <ImageView
+            android:id="@+id/img_profile_videos"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_130"
+            android:background="@color/black"
+            android:scaleType="fitXY"
+            android:src="@drawable/background_login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/dp_5"
+            android:text="Rejected"
+            android:visibility="gone"
+            android:drawableLeft="@drawable/ic_baseline_not_interested_24"
+            android:backgroundTint="@color/purple"
+
+            android:gravity="center"
+            android:background="@drawable/btn_sky_bg"
+            android:drawableTint="@color/white"
+            style="@style/text15sp"
+            android:drawablePadding="@dimen/dp_4"
+            android:id="@+id/tv_reject"
+            android:textSize="@dimen/dp_10"
+            android:paddingVertical="@dimen/dp_2"
+            android:textStyle="bold"
+            android:paddingHorizontal="@dimen/dp_5"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_likes_profile_videos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+            android:drawableTint="@color/white"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="50.5K"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>

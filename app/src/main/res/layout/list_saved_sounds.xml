@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/sp_10"
+    android:orientation="vertical">
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/rl_sound"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/dp_10"
+                android:src="@drawable/exo_controls_play"
+                android:tint="@color/black" />
+
+            <ImageView
+                android:id="@+id/img_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/dp_10"
+                android:src="@drawable/exo_icon_pause"
+                android:tint="@color/black"
+                android:visibility="gone" />
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                android:id="@+id/loading_progress"
+                style="@style/SpinKitView.Large.Wave"
+                android:layout_width="50dp"
+                android:elevation="@dimen/dp_10"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                app:SpinKit_Color="@color/purple"/>
+
+            <ImageView
+                android:layout_width="@dimen/dp_90"
+                android:layout_height="@dimen/dp_90"
+                android:scaleType="fitXY"
+                android:id="@+id/img_sound_drawable"
+                android:src="@drawable/sond"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_text_sound_name"
+            android:layout_toRightOf="@id/rl_sound"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/sp_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ravan Ravan Hoon Main"
+                android:textStyle="bold"
+                android:id="@+id/tv_sound_name"
+                android:textColor="@color/black"
+                android:maxLength="20"
+                android:ellipsize="end"
+                android:textSize="@dimen/sp_16"/>
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Sacet Tandon,Rochak Kohli"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:textSize="@dimen/sp_12"/>-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="00:30"-->
+<!--                android:fontFamily="@font/poppins_light"-->
+<!--                android:textSize="@dimen/sp_12"/>-->
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:id="@+id/img_remove_favotes"
+            android:layout_centerVertical="true"/>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_shoot_with_this"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/btn_bg"
+        android:text="@string/shoot_with_this_sound"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:textAllCaps="false"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lightgrey"
+        android:layout_marginTop="@dimen/dp_5"/>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.privacysettings.ReportProblemActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:onClick="backPress"
+            android:padding="@dimen/dp_3"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/report_problem"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_alignParentBottom="true"
+            android:background="@color/grey" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:fontFamily="@font/poppins_light"
+        android:text="Enter your problem"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp_16" />
+
+    <Spinner
+        android:id="@+id/spinner_report_problem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/dp_10" />
+
+    <EditText
+        android:id="@+id/et_manual_report"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/grey_stroke"
+        android:fontFamily="@font/poppins_light"
+        android:gravity="start"
+        android:hint="@string/report_a_problem"
+        android:maxLength="200"
+        android:padding="@dimen/dp_5"
+        android:textSize="@dimen/sp_14"
+        android:visibility="visible" />
+
+
+    <Button
+        android:id="@+id/btn_report"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_50"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dp_40"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/report"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</LinearLayout>

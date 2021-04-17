@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="app_name" translatable="false">Natural Born Fool</string>
+    <string name="signup_agree">ચાલુ રાખીને, તમે Natural Born Fool ને સંમત થાઓ છો <u><b>વાપરવાના નિયમો</b></u> અને પુષ્ટિ કરો કે તમે Natural Born Fool વાંચ્યું છે <u><b>ગોપનીયતા નીતિ</b></u>. જો તમે એસએમએસ સાથે સાઇન અપ કરો છો, તો એસએમએસ ફી લાગુ થઈ શકે છે.</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rushi_121">"@"Rushi_121</string>
+    <string name="client_id" translatable="false">1422073964848616</string>
+    <string name="redirect_url" translatable="false">https://instagram.com/</string>
+    <string name="base_url" translatable="false">https://api.instagram.com/</string>
+    <string name="get_user_info_url" translatable="false">https://api.instagram.com/v1/users/self/?access_token=</string>
+
+
+    <string name="facebook_app_id">407953477029093</string>
+    <string name="fb_login_protocol_scheme">fb407953477029093</string>
+
+
+    <string name="privacy_settings">ગોપનીયતા સેટિંગ્સ</string>
+    <string name="live_photo">લાઇવ ફોટો</string>
+    <string name="email">ઇમેઇલ</string>
+    <string name="enter_your_email_address">તમારુ ઇમેઇલ એડ્રેસ દાખલ કરો</string>
+    <string name="we_will_send_you_otp_on_the_entered_email_to_verify_your_email">તમારા ઇમેઇલને ચકાસવા માટે અમે તમને દાખલ કરેલા ઇમેઇલ પર ઓટીપી મોકલીશું.</string>
+    <string name="next">આગળ</string>
+    <string name="phone">ફોન</string>
+    <string name="enter_your_phone_number">તમારો ફોન નંબર દાખલ કરો</string>
+    <string name="we_will_send_you_otp_on_the_entered_phone_number_to_verify_your_phone_number">તમારો ફોન નંબર ચકાસવા માટે અમે તમને દાખલ કરેલા ફોન નંબર પર OTP મોકલીશું.</string>
+    <string name="phone_number">ફોન નંબર</string>
+    <string name="balance">સંતુલન</string>
+    <string name="total_coins">કુલ સિક્કા</string>
+    <string name="buy_coins">સિક્કા ખરીદો</string>
+    <string name="cancel">રદ કરો</string>
+    <string name="bio">બાયો</string>
+    <string name="change_password">પાસવર્ડ બદલો</string>
+    <string name="old_password">જુનો પાસવર્ડ</string>
+    <string name="new_password">નવો પાસવર્ડ</string>
+    <string name="confirm_new_password">નવાપાસવર્ડની પુષ્ટી કરો</string>
+    <string name="change">બદલો</string>
+    <string name="photofit_code">કાન કરી કોડ</string>
+    <string name="scan_the_qr_code_to_add_me_as_a_friend">મને મિત્ર તરીકે ઉમેરવા માટે ક્યૂઆર કોડ સ્કેન કરો</string>
+    <string name="save_image">છબી સાચવો</string>
+    <string name="scan_code">સ્કેન કોડ</string>
+    <string name="content_preferences">સામગ્રી પસંદગીઓ</string>
+    <string name="video_languages">વિડિઓ ભાષાઓ</string>
+    <string name="english">અંગ્રેજી</string>
+    <string name="delete">દૂર કરો</string>
+    <string name="add_language">ભાષા ઉમેરો</string>
+    <string name="your_language_preference_will_help_us_customize_your_viewing_preferences">તમારી ભાષા પસંદગીઓ તમારી જોવા માટેની પસંદગીઓને કસ્ટમાઇઝ કરવામાં સહાય કરશે</string>
+    <string name="data_saver">ડેટા સેવર</string>
+    <string name="data_saver_will_reduce_your_cellular_data_usage_videos_may_be_at_lower_resolution_or_take_longer_to_load_this_wont_apply_when_you_re_on_wi_fi">ડેટા સેવર તમારા સેલ્યુલર ડેટા વપરાશને ઘટાડશે. વિડિઓઝ ઓછી રીઝોલ્યુશન પર હોઈ શકે છે અથવા લોડ થવામાં વધુ સમય લે છે. જ્યારે તમે Wi-Fi પર ન હોવ ત્યારે આ ટેવાયું નહીં.</string>
+    <string name="delete_account">એકાઉન્ટ દૂર કરો</string>
+    <string name="verification">ચકાસણી</string>
+    <string name="to_continue_you_need_to_complete_sms_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">ચાલુ રાખવા માટે, તમારે પહેલા એસએમએસ ચકાસણી પૂર્ણ કરવાની જરૂર છે. મોકલો કોડ મોકલો ને ટેપ કર્યા પછી તમને એક ચકાસણી કોડ પ્રાપ્ત થશે</string>
+    <string name="verification_code">ચકાસણી સંજ્ઞા</string>
+    <string name="send_code">કોડ મોકલો</string>
+    <string name="digital_wellbeing">ડિજિટલ વેલ્બીંગ</string>
+    <string name="screen_time_management">સ્ક્રીન ટાઇમ મેનેજમેન્ટ</string>
+    <string name="restricted_mode">પ્રતિબંધિત મોડ</string>
+    <string name="drafts_are_only_visible_to_you_uninstalling_photofit_will_delete_all_drafts">ડ્રાફ્ટ્સ ફક્ત તમને જ દૃશ્યક્ષમ છે. કાન કરી અનઇન્સ્ટોલ કરવું બધા ડ્રાફ્ટ્સને કા willી નાખશે.</string>
+    <string name="remove">દૂર કરો</string>
+    <string name="post">પોસ્ટ</string>
+    <string name="add_a_description">વર્ણન ઉમેરો ...</string>
+    <string name="edit_profile">પ્રોફાઇલ સંપાદિત કરો</string>
+    <string name="change_photo">ફોટો બદલ</string>
+    <string name="change_video">વિડિઓ બદલો</string>
+    <string name="username">વપરાશકર્તા નામ</string>
+    <string name="instagram">ઇન્સ્ટાગ્રામ</string>
+    <string name="youtube">યુટ્યુબ</string>
+    <string name="add_instagram_to_your_profile">તમારી પ્રોફાઇલમાં ઇન્સ્ટાગ્રામ ઉમેરો</string>
+    <string name="add_youtube_to_your_profile">તમારી પ્રોફાઇલમાં યુટ્યુબ ઉમેરો</string>
+    <string name="favorites">મનપસંદ</string>
+    <string name="find_friends">મિત્રો શોધો</string>
+    <string name="search">શોધો</string>
+    <string name="invite_friends">મિત્રોને આમંત્રિત કરો</string>
+    <string name="find_contact">સંપર્ક શોધો</string>
+    <string name="find_facebook_friend">ફેસબુક મિત્ર શોધો</string>
+    <string name="enter_your_new_password">તમારો નવો પાસવર્ડ દાખલ કરો</string>
+    <string name="add_sound">અવાજ ઉમેરો</string>
+    <string name="labourday">#મજુર દિવસ</string>
+    <string name="add_to_favorites">મનપસંદમાં ઉમેરો</string>
+    <string name="this_labourday_let_us_see_what_s_your_future_job">આ # લેબોરેડે અમને તમારી ભાવિની નોકરી શું છે તે જોઈએ.</string>
+    <string name="log_in_to_photofit">પ્રવેશ કરો Natural Born Fool</string>
+    <string name="email_or_phone">ઇમેઇલ અથવા ફોન</string>
+    <string name="password">પાસવર્ડ</string>
+    <string name="forgot_password">પાસવર્ડ ભૂલી ગયા છો?</string>
+    <string name="sign_in">સાઇન ઇન</string>
+    <string name="or">અથવા</string>
+    <string name="don_t_have_an_account">તમારું ખાતું નથી?</string>
+    <string name="manage_my_account">મારું એકાઉન્ટ મેનેજ કરો</string>
+    <string name="add_phone">ફોન ઉમેરો</string>
+    <string name="save_login_info">લ loginગિન માહિતી સાચવો</string>
+    <string name="switch_to_pro_account">પ્રો એકાઉન્ટ પર સ્વિચ કરો</string>
+    <string name="upkar_singh">Upkar Singh</string>
+    <string name="type_your_message">તમારો સંદેશ લખો</string>
+    <string name="hi_upkar_how_are_you">Hi Upkar!! How are you?</string>
+    <string name="name">નામ</string>
+    <string name="save">સાચવો</string>
+    <string name="messages">સંદેશાઓ</string>
+    <string name="followers">અનુયાયીઓ</string>
+    <string name="videos">વિડિઓઝ</string>
+    <string name="like">ગમે છે</string>
+    <string name="follow">અનુસરો</string>
+    <string name="verify_otp">ઓટીપી ચકાસો</string>
+    <string name="enter_4_digit_code">4-અંકનો કોડ દાખલ કરો</string>
+    <string name="to_set_your_password_enter_4_digit_code_send_nto_91_99999_33333">તમારો પાસવર્ડ સેટ કરવા, 4-અંકનો કોડ મોકલો \ n પ્રતિ +91-99999-33333</string>
+    <string name="done">થઈ ગયું</string>
+    <string name="resend_otp">ઓટીપી ફરીથી મોકલો</string>
+    <string name="allow_comments">ટિપ્પણીઓને મંજૂરી આપો</string>
+    <string name="allow_duet_and_react">ડ્યુએટ અને પ્રતિક્રિયાને મંજૂરી આપો</string>
+    <string name="allow_downloads">ડાઉનલોડ્સને મંજૂરી આપો</string>
+    <string name="describe_your_video">તમારી વિડિઓનું વર્ણન કરો</string>
+    <string name="hashtag">#હેશટેગ</string>
+    <string name="who_can_view_this_video">આ વિડિઓ કોણ જોઈ શકે છે</string>
+    <string name="save_to_device">ઉપકરણ પર સાચવો</string>
+    <string name="share_posted_video_to">આના પર પોસ્ટ કરેલી વિડિઓ શેર કરો:</string>
+    <string name="drafts">ડ્રાફ્ટ્સ</string>
+    <string name="privacy_and_safety">ગોપનીયતા અને સલામતી</string>
+    <string name="discoverability">શોધો</string>
+    <string name="with_a_private_account_only_users_you_approve_can_foloow_you_and_view_your_videos_and_likes_your_existing_followers_won_t_be_effected">ખાનગી ખાતા સાથે, તમે સ્વીકારો છો તે વપરાશકર્તાઓ જ તમને અનુસરી શકે છે અને તમારી વિડિઓઝ અને પસંદોને જોઈ શકે છે. તમારા હાલના અનુયાયીઓને અસર થશે નહીં.</string>
+    <string name="show_liked_videos">પસંદ કરેલી વિડિઓઝ બતાવો</string>
+    <string name="suggest_your_account_to_others">તમારા એકાઉન્ટને બીજાને સૂચવો</string>
+    <string name="choose_whether_your_profile_can_be_suggested_to_users_interested_in_account_like_yours">તમારી પ્રોફાઇલ તમારા જેવા ખાતામાં રુચિ ધરાવતા વપરાશકર્તાઓને સૂચવી શકાય કે નહીં તે પસંદ કરો.</string>
+    <string name="safety">સલામતી</string>
+    <string name="who_can_comment_on_your_videos">તમારી વિડિઓઝ પર કોણ ટિપ્પણી કરી શકે છે</string>
+    <string name="everyone">દરેક</string>
+    <string name="who_can_react_to_your_videos">તમારી વિડિઓઝ પર કોણ પ્રતિક્રિયા આપી શકે છે</string>
+    <string name="who_can_duet_with_your_videos">તમારી વિડિઓઝ સાથે કોણ યુગલ કરી શકે છે</string>
+    <string name="who_can_send_you_direct_message">કોણ તમને સીધો સંદેશ મોકલી શકે છે</string>
+    <string name="allow_your_videos_to_be_downloaded">તમારી વિડિઓઝને ડાઉનલોડ કરવાની મંજૂરી આપો</string>
+    <string name="off">બંધ</string>
+    <string name="who_can_view_your_like_videos">કોણ તમારી જેમ વિડિઓઝ જોઈ શકે છે</string>
+    <string name="only_me">માત્ર મને</string>
+    <string name="comment_filters">ટિપ્પણી ગાળકો</string>
+    <string name="on">ચાલુ</string>
+    <string name="interactions">ક્રિયાપ્રતિક્રિયાઓ</string>
+    <string name="likes">પસંદ છે</string>
+    <string name="comments">ટિપ્પણીઓ</string>
+    <string name="new_followers">નવા અનુયાયીઓ</string>
+    <string name="mentions">ઉલ્લેખ</string>
+    <string name="direct_messages">ડાયરેક્ટ સંદેશા</string>
+    <string name="video_updates">વિડિઓ અપડેટ્સ</string>
+    <string name="videos_from_accounts_you_follow">તમે અનુસરો છો તે એકાઉન્ટ્સમાંથી વિડિઓઝ</string>
+    <string name="video_suggestions">વિડિઓ સૂચનો</string>
+    <string name="live">જીવંત</string>
+    <string name="livestreams_from_accounts_you_follow">તમે અનુસરો છો તે એકાઉન્ટ્સમાંથી લાઇવસ્ટ્રીમ</string>
+    <string name="register">સાઇન અપ કરો</string>
+    <string name="send_otp">ઓટીપી મોકલો</string>
+    <string name="have_an_account">ખાતું છે?</string>
+    <string name="search_sounds">અવાજો શોધો</string>
+    <string name="sounds">અવાજો</string>
+    <string name="choose_a_category">કેટેગરી પસંદ કરો</string>
+    <string name="select_a_category_to_get_customized_analytics_in_the_future_this_category_wont_be_displayed_publicly">ભવિષ્યમાં કસ્ટમાઇઝ કરેલ એનાલિટિક્સ મેળવવા માટે કોઈ કેટેગરી પસંદ કરો.આ કેટેગરી સાર્વજનિક રૂપે પ્રદર્શિત થશે નહીં.</string>
+    <string name="public_figure">જાહેર આકૃતિ</string>
+    <string name="personal_blog">વ્યક્તિગત બ્લોગ</string>
+    <string name="education">શિક્ષણ</string>
+    <string name="media">મીડિયા</string>
+    <string name="music_dance">સંગીત / નૃત્ય</string>
+    <string name="beauty_fashion">સુંદરતા / ફેશન</string>
+    <string name="medical_health">તબીબી / આરોગ્ય</string>
+    <string name="entertainment">મનોરંજન</string>
+    <string name="sports_fitness">રમત / તંદુરસ્તી</string>
+    <string name="files">ફાઈલો</string>
+    <string name="usernames_can_contain_only_letters_numbers_underscores_and_periods_changing_your_username_will_also_change_your_profile_link">વપરાશકર્તાનામોમાં ફક્ત અક્ષરો, સંખ્યાઓ, અન્ડરસ્કોર્સ અને અવધિ હોઈ શકે છે. તમારું વપરાશકર્તા નામ બદલવું તમારી પ્રોફાઇલ લિંકને પણ બદલશે.</string>
+    <string name="enter_your_otp">તમારું ઓટીપી દાખલ કરો</string>
+    <string name="select_sound">અવાજ પસંદ કરો</string>
+    <string name="speed">ગતિ</string>
+    <string name="what_s_your_birthday">તમારો જન્મદિવસ શું છે?</string>
+    <string name="your_birthday_wont_be_shown_publicly">તમારો જન્મદિવસ જાહેરમાં બતાવવામાં આવશે નહીં</string>
+    <string name="delete_video">વિડિઓ કા Deleteી નાખો</string>
+    <string name="share_video">વિડિઓ દૂર કરો</string>
+    <string name="ok">બરાબર</string>
+    <string name="total_likes">કુલ પસંદ</string>
+    <string name="manavmittal36_received_0_likes">manavmittal36 received 0 likes.</string>
+    <string name="welcome_to_your_pro_account">તમારા પ્રો એકાઉન્ટમાં આપનું સ્વાગત છે</string>
+    <string name="you_can_find_analytics_in_settings">તમે સેટિંગ્સમાં વિશ્લેષણો શોધી શકો છો</string>
+    <string name="edited_within_this_week">આ અઠવાડિયાની અંદર સંપાદિત</string>
+    <string name="bio_cannot_be_empty" translatable="false">બાયો ખાલી ન હોઈ શકે</string>
+    <string name="following">અનુસરે છે </string>
+    <string name="report">અહેવાલ</string>
+    <string name="turning_on_will_let_other_people_see_your_profile_video">ચાલુ કરવાથી અન્ય લોકોને તમારી પ્રોફાઇલ વિડિઓ જોવા દેશે.</string>
+    <string name="show_profile_video">પ્રોફાઇલ વિડિઓ બતાવો</string>
+    <string name="turning_on_will_let_other_people_see_users_you_follow">ચાલુ કરવાથી અન્ય લોકોને તમે અનુસરો છો તે વપરાશકર્તાઓ જોઈ શકશે.</string>
+    <string name="block">અવરોધિત કરો</string>
+    <string name="blocked_users">અવરોધિત વપરાશકર્તાઓ</string>
+    <string name="no_blocked_users">કોઈ અવરોધિત વપરાશકર્તાઓ નથી</string>
+    <string name="show_my_following_users">મારા નીચેના વપરાશકર્તાઓ બતાવો</string>
+    <string name="turning_on_will_let_other_people_can_see_your_liked_videos">ચાલુ કરવાથી અન્ય લોકોને તમારી પસંદ કરેલી વિડિઓઝ જોઈ શકાશે.</string>
+    <string name="unblock">અનાવરોધિત કરો</string>
+    <string name="private_account">ખાનગી ખાતું</string>
+    <string name="Reply">જવાબ</string>
+    <string name="disable_comments">ટિપ્પણીઓ આ વિડિઓ માટે અક્ષમ છે.</string>
+    <string name="posts">પોસ્ટ્સ</string>
+    <string name="removeFromFvrt">મનપસંદમાંથી દૂર કરો</string>
+    <string name="addToFvrt">મનપસંદમાં ઉમેરો</string>
+    <string name="set_privacy_for_video">Set privacy for video</string>
+    <array name="recording_duration">
+        <item>10 બીજું</item>>
+        <item>15 બીજું</item>>
+        <item>30 બીજું</item>>
+    </array>
+    <string-array name="video_privacy">
+        <item>જાહેર</item>
+        <item>ખાનગી</item>
+
+    </string-array>
+    <array name="email_phone">
+        <item>ઇમેઇલ</item>
+        <item>ફોન</item>
+    </array>
+
+    <string name="hashtags">હેશટેગ્સ</string>
+    <string name="notifications">સૂચનાઓ</string>
+    <string name="friends">મિત્રો</string>
+    <string name="add_phine_number">ફોન નંબર ઉમેરો</string>
+    <string name="add_email">ઇમેઇલ ઉમેરો</string>
+    <string name="account">ખાતું</string>
+    <string name="share_profile">પ્રોફાઇલ શેર કરો</string>
+    <string name="code">કોડ</string>
+    <string name="push_notifications">દબાણ પુર્વક સુચના</string>
+    <string name="language">ભાષા</string>
+    <string name="accessibility">ઉપલ્બધતા</string>
+    <string name="report_a_problem">સમસ્યાનો અહેવાલ આપો</string>
+    <string name="yesterday">ગઇકાલે</string>
+    <string name="people">લોકો</string>
+    <string name="trending">ટ્રેન્ડિંગ</string>
+    <string name="_hashatgs">#હેશટેગ્સ</string>
+    <string name="report_user">વપરાશકર્તાની જાણ કરો</string>
+    <string name="mute_notifications">સૂચનાઓ મ્યૂટ કરો</string>
+    <string name="why_are_you_reporting">તમે જાણ કેમ કરી રહ્યા છો</string>
+    <string name="it_s_spam">તે સ્પામ છે</string>
+
+    <string name="effects">અસરો</string>
+    <string name="no_videos">કોઈ વિડિઓઝ નથી</string>
+    <string name="shoot_with_this_sound">આ અવાજ સાથે બનાવો</string>
+    <string name="general">જનરલ</string>
+    <string name="support">આધાર</string>
+    <string name="help_center">મદદ કેન્દ્ર</string>
+    <string name="safety_center">સલામતી કેન્દ્ર</string>
+    <string name="logout">લૉગ આઉટ</string>
+    <string name="no_following_users">કોઈ નીચેના વપરાશકર્તાઓ નથી</string>
+    <string name="no_followers">અનુયાયીઓ નથી</string>
+    <string name="no_notifications">કોઈ સૂચનાઓ નથી</string>
+    <string name="sign_up_for_an_account">ખાતા માટે સાઇન અપ કરો</string>
+
+    <string name="to_continue_you_need_to_complete_email_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">ચાલુ રાખવા માટે, તમારે પહેલા EMAIL ચકાસણી પૂર્ણ કરવી આવશ્યક છે. મોકલો કોડ ટેપ કર્યા પછી તમને એક ચકાસણી કોડ પ્રાપ્ત થશેा</string>
+    <string name="photofit_contacts">Natural Born Fool સંપર્ક</string>
+    <string name="report_problem">રિપોર્ટ સમસ્યા</string>
+    <string name="search_contacts">સંપર્કો શોધો</string>
+
+    <string name="lanuageConfirmation">શું તમને ખાતરી છે કે ભાષાને આમાં બદલવી પડશે</string>
+    <string name="continue112">ચાલુ રાખો</string>
+    <string name="or_register_with">અથવા સાથે નોંધણી કરો</string>
+    <string name="login_to_use_thisfeature">કૃપા કરીને લ featureગિન કરો અથવા આ સુવિધાનો ઉપયોગ કરવા માટે નોંધણી કરો!</string>
+    <string name="draftes_empty">ડ્રાફ્ટ્સ ખાલી છે</string>
+    <string name="follow_back">પાછા અનુસરો</string>
+    <string name="message">સંદેશ</string>
+    <string name="no_messages">કોઈ સંદેશા નથી</string>
+    <string name="no_conversation_found">હજી વાતચીત નથી</string>
+
+    <string name="add_a_comment">કોઈ હેશટેગ્સ નથી</string>
+    <string name="no_comments">કોઈ ટીપ્પણીઓ નહિ</string>
+    <string name="unmute_notifications">સૂચનાઓને અવાજ દૂર કરો</string>
+    <string name="no_contacts">સંપર્કો નથી</string>
+    <string name="no_hashtags">કોઈ હેશટેગ્સ નથી</string>
+    <string name="photofit_badge">કાન કરી બેજ</string>
+
+    <string-array name="search_list">
+        <item>બધા</item>
+        <item>લોકો</item>
+        <item>વિડિઓઝ</item>
+        <item>#હેશટેગ્સ</item>
+<!--        <item>અવાજ</item>-->
+    </string-array>
+
+    <string-array name="search_tag_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+</resources>

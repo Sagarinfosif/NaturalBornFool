@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transdark"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="@dimen/dp_400"
+    app:layout_collapseMode="pin"
+    android:id="@+id/bottom_sheet_stickers"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/trans"
+        android:fontFamily="@font/poppins_light"
+        android:hint="Search GIFs"
+        android:maxLines="1"
+        android:padding="@dimen/dp_10"
+        android:singleLine="true"
+        android:textSize="@dimen/sp_12" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_stickers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/white"
+        app:tabTextColor="@color/white"
+
+        />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager_stickers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

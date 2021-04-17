@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="in.pureway.cinemaflix.activity.videoEditor.fragments.MyBulgeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transdark"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="@string/clear"
+                android:id="@+id/btn_clear_bulge"
+                android:background="@drawable/btn_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_gravity="end"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_35"
+                android:text="@string/ok"
+                android:id="@+id/btn_add_bulge"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btn_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:fontFamily="@font/poppins_light"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_gravity="end"/>
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            android:id="@+id/recycler_bulge"
+            tools:listitem="@layout/item_bulge"/>
+
+    </LinearLayout>
+</RelativeLayout>

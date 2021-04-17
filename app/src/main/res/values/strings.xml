@@ -1,0 +1,349 @@
+<resources>
+    <string name="app_name" translatable="false">Natural Born Fool</string>
+    <!--    <string name="signup_agree">By continuing, you agree to Natural Born Fool <u><b>Terms of Use</b></u> and confirm that you have read Natural Born Fool <u><b>Privacy Policy</b></u></string>-->
+    <string name="signup_agree1">By logging in you agree to our <u><b>Terms of Use</b></u> and </string>
+    <string name="signup_agree2"><u><b>Privacy Policy</b></u></string>
+    <string name="signup_agree">By logging in you agree to our <u><b>Terms of Use</b></u> and <u><b>Privacy Policy</b></u></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rushi_121">"@"Rushi_121</string>
+
+    <string name="client_id" translatable="false">1422073964848616</string>
+    <string name="redirect_url" translatable="false">https://instagram.com/</string>
+    <string name="base_url" translatable="false">https://api.instagram.com/</string>
+    <string name="get_user_info_url" translatable="false">https://api.instagram.com/v1/users/self/?access_token=</string>
+
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="live_photo">Live Photo</string>
+    <string name="email">Email</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="we_will_send_you_otp_on_the_entered_email_to_verify_your_email">We will send you OTP on the entered Email to verify your Email.</string>
+    <string name="next">Next</string>
+    <string name="phone">Phone</string>
+    <string name="enter_your_phone_number">Enter your phone number</string>
+    <string name="we_will_send_you_otp_on_the_entered_phone_number_to_verify_your_phone_number">We will send you OTP on the entered Phone Number to verify your Phone Number.</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="balance">Balance</string>
+    <string name="total_coins">Total coins</string>
+    <string name="buy_coins">Buy Coins</string>
+    <string name="cancel">Cancel</string>
+    <string name="bio">Bio</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="change">Change</string>
+    <string name="photofit_code">Natural Born Fool Code</string>
+    <string name="scan_the_qr_code_to_add_me_as_a_friend">Scan the QR Code to add me as a friend</string>
+    <string name="save_image">Save Image</string>
+    <string name="scan_code">Scan Code</string>
+    <string name="content_preferences">Content Preferences</string>
+    <string name="video_languages">Video Languages</string>
+    <string name="english">English</string>
+    <string name="delete">Delete</string>
+    <string name="add_language">Add Language</string>
+    <string name="your_language_preference_will_help_us_customize_your_viewing_preferences">Your language preference will help us customize your viewing preferences</string>
+    <string name="data_saver">Data Saver</string>
+    <string name="data_saver_will_reduce_your_cellular_data_usage_videos_may_be_at_lower_resolution_or_take_longer_to_load_this_wont_apply_when_you_re_on_wi_fi">Data saver will reduce your cellular data usage. Videos may be at lower resolution or take longer to load. This wont apply when you\'re on wi-fi.</string>
+    <string name="delete_account">Delete account</string>
+    <string name="verification">Verification</string>
+    <string name="to_continue_you_need_to_complete_sms_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">To continue, you need to complete SMS verification first. You will receive an verification code after tapping \'Send Code\'</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="send_code">Send Code</string>
+    <string name="digital_wellbeing">Digital Wellbeing</string>
+    <string name="screen_time_management">Screen Time Management</string>
+    <string name="restricted_mode">Restricted Mode</string>
+    <string name="drafts_are_only_visible_to_you_uninstalling_photofit_will_delete_all_drafts">Drafts are only visible to you. Uninstalling Natural Born Fool will delete all drafts.</string>
+    <string name="remove">Remove</string>
+    <string name="post">Post</string>
+    <string name="add_a_description">Add a description...</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_photo">Change Photo</string>
+    <string name="change_video">Change Video</string>
+    <string name="username">Username</string>
+    <string name="instagram">Instagram</string>
+    <string name="youtube">Youtube</string>
+    <string name="add_instagram_to_your_profile">Add Instagram to your profile</string>
+    <string name="add_youtube_to_your_profile">Add Youtube to your profile</string>
+    <string name="favorites">Favorites</string>
+    <string name="find_friends">Find Friends</string>
+    <string name="search">Search</string>
+    <string name="invite_friends">Invite Friends</string>
+    <string name="find_contact">Find Contact</string>
+    <string name="find_facebook_friend">Find Facebook Friend</string>
+    <string name="enter_your_new_password">Enter your new password</string>
+    <string name="add_sound">Add Sound</string>
+    <string name="labourday">#labourday</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="this_labourday_let_us_see_what_s_your_future_job">This #Labourday let us see what\'s your future job.</string>
+    <string name="log_in_to_photofit">Log in to Natural Born Fool</string>
+    <string name="email_or_phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or">OR</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="manage_my_account">Manage my account</string>
+    <string name="add_phone">Add Phone</string>
+    <string name="save_login_info">Save login info</string>
+    <string name="switch_to_pro_account">Switch to Pro Account</string>
+    <string name="upkar_singh">Upkar Singh</string>
+    <string name="type_your_message">Type your message</string>
+    <string name="hi_upkar_how_are_you">Hi Upkar!! How are you?</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="messages">Messages</string>
+    <string name="followers">Followers</string>
+    <string name="videos">Videos</string>
+    <string name="like">Like</string>
+    <string name="follow">Follow</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="enter_4_digit_code">Enter 4-digit code</string>
+    <string name="to_set_your_password_enter_4_digit_code_send_nto_91_99999_33333">To set your password, enter 4-digit code send\nto +91-99999-33333</string>
+    <string name="done">Done</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="allow_comments">Allow Comments</string>
+    <string name="allow_duet_and_react">Allow Duet and React</string>
+    <string name="allow_downloads">Allow Downloads</string>
+    <string name="describe_your_video">Describe your video</string>
+    <string name="hashtag">#hashtag</string>
+    <string name="who_can_view_this_video">Who can view this video</string>
+    <string name="save_to_device">Save to device</string>
+    <string name="share_posted_video_to">Share posted video to:</string>
+    <string name="drafts">Drafts</string>
+    <string name="discoverability">Discoverability</string>
+    <string name="with_a_private_account_only_users_you_approve_can_foloow_you_and_view_your_videos_and_likes_your_existing_followers_won_t_be_effected">With a private account, only users you approve can follow you and view your videos and likes.Your existing followers won\'t be effected.</string>
+    <string name="show_liked_videos">Show Liked Videos</string>
+    <string name="suggest_your_account_to_others">Suggest your account to others</string>
+    <string name="choose_whether_your_profile_can_be_suggested_to_users_interested_in_account_like_yours">Choose whether your profile can be suggested to users interested in account like yours.</string>
+    <string name="safety">Safety</string>
+    <string name="who_can_comment_on_your_videos">Who can comment on your videos</string>
+    <string name="everyone">Everyone</string>
+    <string name="who_can_react_to_your_videos">Who can react to your videos</string>
+    <string name="who_can_duet_with_your_videos">Who can duet with your videos</string>
+    <string name="who_can_send_you_direct_message">Who can send you direct message</string>
+    <string name="allow_your_videos_to_be_downloaded">Allow your videos to be downloaded</string>
+    <string name="off">Off</string>
+    <string name="who_can_view_your_like_videos">Who can view your like videos</string>
+    <string name="only_me">Only me</string>
+    <string name="comment_filters">Comment Filters</string>
+    <string name="on">On</string>
+    <string name="interactions">Interactions</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="new_followers">New Followers</string>
+    <string name="mentions">Mentions</string>
+    <string name="direct_messages">Direct Messages</string>
+    <string name="video_updates">Video Updates</string>
+    <string name="videos_from_accounts_you_follow">Videos from accounts you follow</string>
+    <string name="video_suggestions">Video Suggestions</string>
+    <string name="live">Live</string>
+    <string name="livestreams_from_accounts_you_follow">Livestreams from accounts you follow</string>
+    <string name="register">Register</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="have_an_account">Already have an account?</string>
+    <string name="search_sounds">Search Sounds</string>
+    <string name="sounds">Sounds</string>
+    <string name="choose_a_category">Choose a category</string>
+    <string name="select_a_category_to_get_customized_analytics_in_the_future_this_category_wont_be_displayed_publicly">Select a category to get customized analytics in the future.This category wont be displayed publicly.</string>
+    <string name="public_figure">Public Figure</string>
+    <string name="personal_blog">Personal Blog</string>
+    <string name="education">Education</string>
+    <string name="media">Media</string>
+    <string name="music_dance">Music/Dance</string>
+    <string name="beauty_fashion">Beauty/Fashion</string>
+    <string name="medical_health">Medical/health</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="sports_fitness">Sports/Fitness</string>
+    <string name="files">Files</string>
+    <string name="usernames_can_contain_only_letters_numbers_underscores_and_periods_changing_your_username_will_also_change_your_profile_link">Usernames can contain only letters,numbers,underscores, and periods. Changing your username will also change your profile link.</string>
+    <string name="enter_your_otp">Enter Your Verification Code</string>
+    <string name="select_sound">Select Sound</string>
+    <string name="speed">Speed</string>
+    <string name="what_s_your_birthday">What\'s your birthday</string>
+    <string name="your_birthday_wont_be_shown_publicly">Your birthday wont be shown publicly</string>
+    <string name="delete_video">Delete Video</string>
+    <string name="share_video">Share Video</string>
+    <string name="ok">ok</string>
+    <string name="total_likes">Total Likes</string>
+    <string name="manavmittal36_received_0_likes">manavmittal36 received 0 likes.</string>
+    <string name="welcome_to_your_pro_account">Welcome to your Pro Account</string>
+    <string name="you_can_find_analytics_in_settings">You can find analytics in settings</string>
+    <string name="edited_within_this_week">Edited within this week</string>
+
+
+    <!--    <string name="facebook_app_id" translatable="false">2998475210248476</string>-->
+    <!--    <string name="fb_login_protocol_scheme" translatable="false">fb2998475210248476</string>-->
+
+    <string name="facebook_app_id">407953477029093</string>
+    <string name="fb_login_protocol_scheme">fb407953477029093</string>
+
+
+    <string name="bio_cannot_be_empty" translatable="false">Bio cannot be empty</string>
+    <string name="following">Following</string>
+    <string name="report">Report</string>
+    <string name="turning_on_will_let_other_people_see_your_profile_video">Turning on will let other people see your profile video.</string>
+    <string name="show_profile_video">Show Profile Video</string>
+    <string name="turning_on_will_let_other_people_see_users_you_follow">Turning on will let other people see users you follow.</string>
+    <string name="block">Block/Unblock</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="no_blocked_users">No blocked users</string>
+    <string name="show_my_following_users">Show my following users</string>
+    <string name="turning_on_will_let_other_people_can_see_your_liked_videos">Turning on will let other people can see your liked videos.</string>
+    <string name="unblock">Unblock</string>
+    <string name="private_account">Private Account</string>
+    <string name="Reply">reply</string>
+    <string name="disable_comments">Comments are disabled for this video.</string>
+
+    <string name="set_privacy_for_video">Set privacy for video</string>
+
+    <string name="posts">Posts</string>
+    <string name="removeFromFvrt">Remove from favourite</string>
+    <string name="addToFvrt">Add to favourite</string>
+    <string name="hashtags">HashTags</string>
+    <string name="notifications">Notifications</string>
+    <string name="friends">Friends</string>
+    <string name="add_phine_number">Add Phone Number</string>
+    <string name="add_email">Add Email</string>
+    <string name="account">Account</string>
+    <string name="privacy_and_safety">Privacy and Safety</string>
+    <string name="share_profile">Share Profile</string>
+    <string name="code">Code</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="language">Language</string>
+    <string name="accessibility">Accessibility</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="people">People</string>
+    <string name="trending">Trending</string>
+    <string name="_hashatgs">#HashTags</string>
+    <string name="report_user">Report user</string>
+    <string name="mute_notifications">Mute Notifications</string>
+    <string name="why_are_you_reporting">Why are you reporting</string>
+    <string name="it_s_spam">It\'s spam</string>
+    <string name="effects">Effects</string>
+    <string name="no_videos">No Videos</string>
+    <string name="shoot_with_this_sound">Shoot with this sound</string>
+    <string name="general">General</string>
+    <string name="support">Support</string>
+    <string name="help_center">Help Center</string>
+    <string name="safety_center">Safety Center</string>
+    <string name="logout">Logout</string>
+    <string name="no_following_users">No Following Users</string>
+    <string name="no_followers">No Followers</string>
+    <string name="no_notifications">No Notifications</string>
+    <string name="sign_up_for_an_account">Sign up for an account</string>
+    <string name="to_continue_you_need_to_complete_email_verification_first_you_will_receive_an_verification_code_after_tapping_send_code">To continue, you need to complete EMAIL verification first. You will receive an verification code after tapping \'Send Code\'</string>
+    <string name="photofit_contacts">Natural Born Fool Contacts</string>
+    <string name="report_problem">Report Problem</string>
+    <string name="report_a_problem">Report a problem</string>
+    <string name="search_contacts">Search Contacts</string>
+
+    <string name="lanuageConfirmation">Are you sure to change language to</string>
+    <string name="continue112">Continue</string>
+    <string name="or_register_with">Or Register with</string>
+    <string name="login_to_use_thisfeature">Please login or Register to use this feature!</string>
+    <string name="draftes_empty">Drafts are Empty</string>
+    <string name="follow_back">Follow Back</string>
+    <string name="message">Message</string>
+    <string name="no_messages">No Messages</string>
+    <string name="no_conversation_found">No Conversation Yet</string>
+    <string name="add_a_comment">Add a comment...</string>
+    <string name="no_comments">No Comments</string>
+    <string name="unmute_notifications">Unmute Notifications</string>
+    <string name="no_contacts">No Contacts</string>
+    <string name="no_hashtags">No Hashtags</string>
+    <string name="photofit_badge">Natural Born Fool Badge</string>
+    <string name="delete_comment">Delete Comment</string>
+    <string name="delete_chat">Delete Chat</string>
+    <string name="clear">Clear</string>
+    <string name="beautify">Beautify</string>
+    <string name="filter">Filter</string>
+    <string name="virtual">Virtual</string>
+    <string name="problem_empty">Problem cannot be empty.</string>
+    <string name="delete_message">Delete Message</string>
+    <string name="sign_up_with_phone_number_or_email">Continue with Phone Number</string>
+    <string name="for_you">Short Videos</string>
+    <string name="_"><![CDATA[<<]]></string>
+    <string name="coins">Coins</string>
+    <string name="trial">Trial</string>
+    <string name="purchase_coins">Purchase Coin</string>
+    <string name="share_gift">Share Gift</string>
+    <string name="get_coins">Get Coins</string>
+    <string name="zero">0</string>
+    <string name="you_sent_a_gift_to">You sent a gift to</string>
+    <string name="you_received_a_gift_from">You Received a gift from</string>
+    <string name="sent">Sent</string>
+    <string name="received">Received</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="aadhar_or_pan">Aadhar or PAN Number</string>
+    <string name="verify">Verify</string>
+    <string name="your_request_for_account_verification">Your request for account verification is \nsuccessfully sent to the Admin. \nPlease wait for the verification response.</string>
+    <string name="okay">Okay</string>
+    <string name="gift">Gift</string>
+    <string name="aadhar_card">Aadhar Card</string>
+    <string name="pan_card">PAN Card</string>
+    <string name="share">Share</string>
+    <string name="duet">Duet</string>
+    <string name="you_need_a_cancre_account_nto_continue">You need a Natural Born Fool account to continue</string>
+    <string name="or_sign_up_with">Or Sign up with</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account">Already Have an Account?</string>
+    <string name="sign_up_with_email">Continue with Google</string>
+    <string name="sign_up_with_Facebook">Continue with Facebook</string>
+    <string name="LongVideo">Long Videos</string>
+    <string name="ReportVideo">Report Video</string>
+    <string name="Submit">Submit</string>
+    <string name="EnterOldNumber">Enter your old number</string>
+    <string name="EnterNewNumber">Enter new number</string>
+    <string name="start">start</string>
+    <string name="sharing">Sharing...</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="Register">Register</string>
+    <string name="login">Login</string>
+    <string name="dateofbirth">Date of Birth</string>
+
+    <array name="recording_duration">
+        <item>10 sec</item>>
+        <item>15 sec</item>>
+        <item>30 sec</item>>
+    </array>
+
+    <string-array name="video_privacy">
+        <item>Public</item>
+        <item>Private</item>
+
+    </string-array>
+
+    <array name="email_phone">
+        <item>Email</item>
+        <item>Phone</item>
+    </array>
+
+    <string-array name="search_list">
+        <item>All</item>
+        <item>People</item>
+        <item>Videos</item>
+        <item>#HashTags</item>
+        <!--        <item>Sound</item>-->
+    </string-array>
+
+    <string-array name="search_tag_ids">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="spinnerAllEveryone">
+        <item>Everyone</item>
+        <item>Follower</item>
+        <item>Only me</item>
+
+    </string-array>
+
+    <string-array name="onOFF">
+        <item>On</item>
+        <item>Off</item>
+
+    </string-array>
+</resources>

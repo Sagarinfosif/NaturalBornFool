@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_45"
+        android:background="@drawable/btn_bg"
+        android:text="Bulge 1"
+        android:layout_margin="@dimen/dp_3"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_light"
+        android:textColor="@color/white"
+        android:id="@+id/btn_bulge"
+        />
+
+</LinearLayout>

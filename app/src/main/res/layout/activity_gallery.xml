@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GalleryActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_pick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pick" />
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_path"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PATH: ..." />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100"
+        app:cardElevation="@dimen/dp_2"
+        app:cardCornerRadius="@dimen/dp_5"
+        app:cardBackgroundColor="@color/white"
+        android:layout_margin="@dimen/dp_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:padding="@dimen/dp_10"
+                android:textColor="@color/white"
+                android:layout_centerInParent="true"
+                android:id="@+id/btnUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_45"
+                android:background="@drawable/btn_bg"
+                android:text="Upload Image"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="@dimen/dp_10"
+    android:layout_marginBottom="@dimen/dp_5"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_image"
+        android:layout_width="@dimen/dp_50"
+        android:layout_centerVertical="true"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/ic_coinz"/>
+
+    <LinearLayout
+        android:layout_toLeftOf="@id/iv_giftImage"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_image"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/you_received_a_gift_from"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/darkgrey"/>
+
+
+            <TextView
+                android:id="@+id/tv_sentName"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="Heenaraj"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just Now"
+            android:id="@+id/tv_time"
+            android:textSize="14sp"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textStyle="bold"
+            android:textColor="@color/darkgrey"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/iv_giftImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/giftImage"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:src="@drawable/giftzz"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_coin"
+            android:layout_below="@id/iv_giftImage"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/darkgrey"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

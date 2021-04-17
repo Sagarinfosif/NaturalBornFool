@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_reportVideo"
+        style="@style/text15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:layout_marginVertical="@dimen/dp_2"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/dp_12"
+        android:text="@string/ReportVideo"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/dp_16"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:background="@color/grey"
+        android:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/text15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="@dimen/dp_40"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="@string/cancel"
+        android:textColor="@color/purple"
+        android:textSize="@dimen/dp_14" />
+
+    <!--    <View-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/dp_1"-->
+    <!--        android:layout_marginVertical="@dimen/dp_5"-->
+    <!--        android:background="@color/grey" />-->
+
+</LinearLayout>

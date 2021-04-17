@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.privacysettings.LanguageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_backArrow"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:onClick="backPress"
+            android:padding="@dimen/dp_3"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:text="Language"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/grey"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:fontFamily="@font/poppins_light"
+        android:text="@string/add_language"
+        android:textSize="@dimen/sp_14"
+        android:visibility="gone" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sp_15"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioEn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:buttonTint="@color/purple"
+            android:fontFamily="@font/poppins_light"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dp_10"
+            android:text="English"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioHindi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:buttonTint="@color/purple"
+            android:fontFamily="@font/poppins_light"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dp_10"
+            android:text="हिन्दी"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:visibility="visible"
+            android:id="@+id/radioMarathi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/purple"
+            android:fontFamily="@font/poppins_light"
+            android:layoutDirection="rtl"
+            android:padding="@dimen/dp_10"
+            android:text="मराठी"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_15"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dp_30"
+        android:paddingLeft="@dimen/dp_30"
+        android:paddingRight="@dimen/dp_30"
+        android:text="@string/continue112"
+        android:textAllCaps="false"
+        android:fontFamily="@font/poppins_light"/>
+
+</LinearLayout>

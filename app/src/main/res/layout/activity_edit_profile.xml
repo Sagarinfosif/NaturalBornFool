@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.activity.editProfile.EditProfileActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/lightgrey">
+
+        <ImageView
+            android:id="@+id/img_back_edit"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/sp_10"
+            android:padding="@dimen/dp_3"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/edit_profile"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/curved_grey" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_centerInParent="true"
+                android:id="@+id/card_img"
+                app:cardCornerRadius="@dimen/dp_50">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_photo"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_centerInParent="true"
+                android:backgroundTint="@color/black"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background_login" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera"
+                android:id="@+id/img_camera"
+                android:elevation="@dimen/dp_10"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp_10"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/change_photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_centerInParent="true"
+                android:id="@+id/card_video"
+                app:cardCornerRadius="@dimen/dp_50">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/background_login" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_centerInParent="true"
+                android:elevation="@dimen/dp_10"
+                android:src="@drawable/video_camera"
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_video"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/sp_10"
+                android:fontFamily="@font/poppins_light"
+                android:text="@string/change_video"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_name"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:visibility="gone"
+            android:id="@+id/tv_name_edit_prof"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="Upkar Singh"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/username"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:visibility="gone"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="upkarsingh332"
+            android:textColor="@color/darkgrey"
+            android:id="@+id/tv_username_edit_prof"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+            android:id="@+id/rl_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/phone_number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:visibility="gone"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="upkarsingh332"
+            android:textColor="@color/darkgrey"
+            android:id="@+id/tv_phonenumber"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/bio"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="Add a bio"
+            android:visibility="gone"
+            android:maxLength="20"
+            android:ellipsize="end"
+            android:id="@+id/tv_bio_edit_prof"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="@color/lightgrey" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_insta"
+        android:visibility="gone"
+        android:background="@color/lightgrey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/instagram"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="@string/add_instagram_to_your_profile"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:visibility="gone"
+        android:background="@color/lightgrey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_5"
+        android:visibility="gone"
+        android:background="@color/lightgrey">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/dp_10"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/youtube"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_12" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/dp_10"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:drawableTint="@color/darkgrey"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center_vertical"
+            android:text="@string/add_youtube_to_your_profile"
+            android:textColor="@color/darkgrey"
+            android:textSize="@dimen/sp_12" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:visibility="gone"
+        android:background="@color/lightgrey" />
+
+</LinearLayout>

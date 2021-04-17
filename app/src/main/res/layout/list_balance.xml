@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="@dimen/dp_10"
+    android:layout_margin="@dimen/dp_10">
+
+    <RelativeLayout
+        android:padding="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="@dimen/sp_16"
+            android:layout_height="@dimen/sp_16"
+            android:src="@drawable/sound_1"
+            android:tint="@color/purple"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/img_sond"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100 coins"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_15"
+            android:layout_toRightOf="@id/img_sond"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/black"
+            android:text="$100"
+            android:backgroundTint="@color/red"
+            android:background="@drawable/btn_bg"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

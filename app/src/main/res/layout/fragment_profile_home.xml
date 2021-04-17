@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="in.pureway.cinemaflix.fragments.homefrags.ProfileHomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/img_add_friends"
+            android:layout_width="@dimen/dp_24"
+            android:visibility="gone"
+            android:layout_height="@dimen/dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:padding="@dimen/dp_3"
+            android:src="@drawable/ic_add_profile" />
+
+        <TextView
+            android:id="@+id/tv_name_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_light"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_settings_profile"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_10"
+            android:padding="@dimen/dp_6"
+            android:src="@drawable/ic_more" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_not_logged_in"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:fontFamily="@font/poppins_light"
+
+                android:gravity="center"
+                android:text="@string/you_need_a_cancre_account_nto_continue"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+
+            <!--            <Button-->
+            <!--                -->
+            <!--                android:layout_width="@dimen/dp_210"-->
+            <!--                android:layout_height="@dimen/dp_50"-->
+            <!--                android:layout_gravity="center_horizontal"-->
+            <!--                android:layout_marginTop="@dimen/dp_15"-->
+            <!--                android:layout_marginBottom="@dimen/dp_10"-->
+            <!--                android:background="@drawable/btn_bg"-->
+            <!--                android:fontFamily="@font/poppins_light"-->
+            <!--                android:text="@string/have_an_account"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@color/white" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:fontFamily="@font/poppins_light"-->
+            <!--                android:text="@string/or"-->
+            <!--                android:textColor="@color/black" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_phoneLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/greenn">
+
+                <ImageView
+                    android:id="@+id/img_Phone"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:elevation="@dimen/dp_10"
+                    android:src="@drawable/ic_smartphone"
+                    android:tint="@color/white" />
+
+                <Button
+                    android:id="@+id/btn_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:layout_toRightOf="@+id/img_Phone"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/sign_up_with_phone_number_or_email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/lightblue">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@drawable/btn_sky_bg"
+                    android:backgroundTint="@color/white"
+                    android:elevation="@dimen/dp_10"
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ic_google" />
+
+                <Button
+                    android:id="@+id/btn_SocialMail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/sign_up_with_email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_15"
+                android:background="@drawable/btn_bg"
+                android:backgroundTint="@color/blue">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_20"
+                    android:background="@drawable/btn_sky_bg"
+                    android:backgroundTint="@color/white"
+                    android:elevation="@dimen/dp_10"
+
+                    android:padding="@dimen/dp_5"
+                    android:src="@drawable/ic_facebook_login" />
+
+                <Button
+                    android:id="@+id/btn_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/dp_20"
+
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/sign_up_with_Facebook"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dp_16"
+
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginVertical="@dimen/dp_10"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="@dimen/dp_100"-->
+            <!--                    android:layout_height="@dimen/dp_1"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:layout_toLeftOf="@id/tv_or"-->
+            <!--                    android:background="@color/black" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_or"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_centerInParent="true"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_marginHorizontal="@dimen/dp_10"-->
+            <!--                    android:fontFamily="@font/poppins_light"-->
+            <!--                    android:text="@string/or_register_with"-->
+            <!--                    android:textColor="@color/black" />-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="@dimen/dp_100"-->
+            <!--                    android:layout_height="@dimen/dp_1"-->
+            <!--                    android:layout_centerVertical="true"-->
+            <!--                    android:layout_toRightOf="@id/tv_or"-->
+            <!--                    android:background="@color/black" />-->
+
+            <!--            </RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/img_fb_login"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/img_google_login"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_margin="@dimen/dp_10"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gmail" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTermLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="@string/signup_agree1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11" />
+
+                <TextView
+                    android:id="@+id/tv_policyLink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="@string/signup_agree2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_11" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_25"
+                android:layout_marginTop="@dimen/dp_20"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="@string/signup_agree"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_11" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="@string/already_have_an_account"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/btn_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="center"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/purple" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_centerInParent="true"-->
+        <!--            android:orientation="vertical">-->
+
+        <!--            <ImageView-->
+        <!--                android:layout_width="@dimen/dp_90"-->
+        <!--                android:layout_height="@dimen/dp_90"-->
+        <!--                android:layout_gravity="center_horizontal"-->
+        <!--                android:src="@drawable/ic_user"-->
+        <!--                android:tint="@color/black" />-->
+
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_gravity="center_horizontal"-->
+        <!--                android:layout_marginTop="@dimen/dp_10"-->
+        <!--                android:fontFamily="@font/poppins_light"-->
+        <!--                android:text="@string/sign_up_for_an_account"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="@dimen/sp_16" />-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/btn_sign_up_notifications"-->
+        <!--                android:layout_width="@dimen/dp_200"-->
+        <!--                android:layout_height="@dimen/dp_50"-->
+        <!--                android:layout_gravity="center_horizontal"-->
+        <!--                android:layout_marginTop="@dimen/dp_20"-->
+        <!--                android:layout_marginBottom="@dimen/dp_10"-->
+        <!--                android:background="@drawable/btn_bg"-->
+        <!--                android:fontFamily="@font/poppins_light"-->
+        <!--                android:text="@string/register"-->
+        <!--                android:textAllCaps="false"-->
+        <!--                android:textColor="@color/white" />-->
+
+        <!--        </LinearLayout>-->
+
+    </RelativeLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_10"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="@dimen/dp_40" />
+
+            <View
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grey" />
+
+            <View
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@color/grey" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/sp_10"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grey" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/dp_50"-->
+                    <!--                        android:layout_height="20dp"-->
+                    <!--                        android:layout_gravity="center_horizontal"-->
+                    <!--                        android:layout_marginTop="@dimen/dp_5"-->
+                    <!--                        android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+                <!--                <View-->
+                <!--                    android:layout_width="@dimen/dp_1"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_margin="@dimen/dp_5"-->
+                <!--                    android:background="@color/darkgrey" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grey" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/dp_50"-->
+                    <!--                        android:layout_height="20dp"-->
+                    <!--                        android:layout_gravity="center_horizontal"-->
+                    <!--                        android:layout_marginTop="@dimen/dp_5"-->
+                    <!--                        android:background="@color/grey" />-->
+                </LinearLayout>
+
+                <!--                <View-->
+                <!--                    android:layout_width="@dimen/dp_1"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_margin="@dimen/dp_5"-->
+                <!--                    android:background="@color/darkgrey" />-->
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="@dimen/dp_80"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/grey" />
+
+                    <!--                    <View-->
+                    <!--                        android:layout_width="@dimen/dp_50"-->
+                    <!--                        android:layout_height="20dp"-->
+                    <!--                        android:layout_gravity="center_horizontal"-->
+                    <!--                        android:layout_marginTop="@dimen/dp_5"-->
+                    <!--                        android:background="@color/grey" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_5"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dp_3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@drawable/black_stroke"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="@dimen/dp_3"
+                    android:text="@string/message"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="@dimen/dp_120"
+                    android:layout_height="@dimen/dp_40"
+                    android:layout_marginVertical="@dimen/dp_3"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:background="@color/grey" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardCornerRadius="@dimen/sp_10">
+
+                    <View
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_instagram" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardCornerRadius="@dimen/sp_10">
+
+                    <View
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_youtube" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_20"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@color/grey" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/ll_profile_logged_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/dp_120"
+                android:layout_height="@dimen/dp_120"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/dp_10"
+                app:cardCornerRadius="@dimen/dp_60">
+
+                <ImageView
+                    android:id="@+id/img_profile_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher_background"
+                    android:visibility="gone" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_user_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_user1"
+                    android:visibility="visible"
+                    app:civ_border_color="@color/purple"
+                    app:civ_border_width="@dimen/dp_1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/ll_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:src="@drawable/giftzz" />
+
+                <TextView
+                    android:id="@+id/tv_coinBalanceProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp_5"
+                    android:gravity="center"
+                    android:text="@string/zero"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dp_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_username_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/poppins_light"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_18"
+                    android:textStyle="bold" />
+
+                <!--            <TextView-->
+                <!--                android:id="@+id/tv_name_profile"-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_gravity="center_horizontal"-->
+                <!--                android:fontFamily="@font/poppins_light"-->
+                <!--                android:text="Lorem Ipsum"-->
+                <!--                android:textColor="@color/black"-->
+                <!--                android:textSize="@dimen/sp_18"-->
+                <!--                android:textStyle="bold" />-->
+
+                <ImageView
+                    android:id="@+id/img_verified"
+                    android:layout_width="@dimen/dp_18"
+                    android:layout_height="@dimen/dp_18"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp_10"
+                    android:src="@drawable/ic_tick_verified"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/sp_10"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_following"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/tv_videos_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/following"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_followers"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp_5">
+
+                    <TextView
+                        android:id="@+id/tv_followers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/followers"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <!--            <View-->
+                <!--                android:layout_width="@dimen/dp_1"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_margin="@dimen/dp_5"-->
+                <!--                android:background="@color/darkgrey" />-->
+
+                <LinearLayout
+                    android:id="@+id/ll_likes"
+                    android:layout_width="@dimen/dp_80"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp_5"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/tv_likes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/likes"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="@dimen/sp_12" />
+
+                </LinearLayout>
+
+                <!--            <View-->
+                <!--                android:layout_width="@dimen/dp_1"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_margin="@dimen/dp_5"-->
+                <!--                android:background="@color/darkgrey" />-->
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_bio_prof"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginHorizontal="@dimen/dp_30"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:text="Actor | Pet Lover | Karma Believer"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/dp_14" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_edit_profile"
+                    android:layout_width="@dimen/dp_100"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_marginRight="@dimen/dp_10"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:background="@drawable/btn_bg"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/edit_profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_drafts"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/dp_10"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardCornerRadius="@dimen/sp_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_video_player" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_favorites_profile"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/grey"
+                    app:cardCornerRadius="@dimen/sp_10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_book_mark" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/purple"
+                app:tabRippleColor="@color/purple"
+                app:tabSelectedTextColor="@color/purple"
+                app:tabTextColor="@color/purple" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_no_videos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/dp_20"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardUseCompatPadding="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/dp_30"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="@string/no_videos"
+                    android:textColor="@color/black" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_videos_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:nestedScrollingEnabled="false"
+                android:paddingBottom="?android:actionBarSize"
+                android:visibility="visible"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:spanCount="3"
+                tools:listitem="@layout/list_videos_profile" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

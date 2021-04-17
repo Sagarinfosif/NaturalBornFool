@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginHorizontal="@dimen/dp_10"
+    android:layout_marginVertical="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dp_50"
+        android:layout_height="@dimen/dp_50"
+        android:src="@drawable/ic_user1"
+        android:id="@+id/img_contact"
+        android:layout_centerVertical="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_contact"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Name"
+            android:id="@+id/tv_contact_name"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123456789"
+            android:id="@+id/tv_contact_number"
+            android:fontFamily="@font/poppins_light"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_40"
+        android:background="@drawable/btn_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginVertical="@dimen/dp_3"
+        android:text="Invite"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:id="@+id/btn_invite_invite"
+        android:fontFamily="@font/poppins_light"/>
+
+</RelativeLayout>

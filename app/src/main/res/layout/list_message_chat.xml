@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/sp_10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/messageLL">
+        <LinearLayout
+            android:id="@+id/receiverRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/receiverImg"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_gravity="bottom"
+                android:src="@drawable/poat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5">
+
+                <TextView
+                    android:id="@+id/receiverMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:background="@drawable/chat_grey"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/hi_upkar_how_are_you"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/receiverTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receiverMsg"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="3.30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_10" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/senderRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/senderImg"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/poat" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/senderImg">
+
+                <TextView
+                    android:id="@+id/senderMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:background="@drawable/chat_red"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="right"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/hi_upkar_how_are_you"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/senderTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/senderMsg"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="3.30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_10" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/imageLL">
+
+        <LinearLayout
+            android:id="@+id/receiverImageLL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/receiverImageImg"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@drawable/poat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_corner_radius="@dimen/dp_10"
+                    android:id="@+id/receiverImageMsg"
+                    android:layout_width="@dimen/dp_250"
+                    android:layout_height="@dimen/dp_250"
+                    android:layout_marginRight="@dimen/dp_30"
+                    android:src="@drawable/poat"
+                    android:scaleType="centerCrop"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/hi_upkar_how_are_you"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/receiverImageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/receiverImageMsg"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="3.30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_10" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/senderImageRL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/senderImageImg"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/poat" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_toLeftOf="@id/senderImageImg">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    app:riv_corner_radius="@dimen/dp_10"
+                    android:id="@+id/senderImageMsg"
+                    android:layout_width="@dimen/dp_250"
+                    android:layout_height="@dimen/dp_250"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dp_30"
+                    android:fontFamily="@font/poppins_light"
+                    android:gravity="right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/poat"
+                    android:padding="@dimen/dp_5"
+                    android:text="@string/hi_upkar_how_are_you"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/senderImageTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/senderImageMsg"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="3.30 AM"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp_10" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
